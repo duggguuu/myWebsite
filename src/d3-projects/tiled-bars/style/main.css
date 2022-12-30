@@ -1,0 +1,71 @@
+body {
+  font-family: 'Graphik', sans-serif;
+}
+
+#menu {
+  margin-left: 20px;
+}
+
+select {
+  width: 200px;
+  padding: 3px;
+  margin-right: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.legend {
+  font-size: 12px;
+  fill: #212121;
+}
+
+.legend rect {
+  fill: #212121;
+}
+
+.title {
+  font-weight: bold;
+  fill: #212121;
+}
+
+.axis line {
+  stroke: #eee;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.y.axis text {
+  font-size: 11px;
+  fill: #212121;
+  font-weight: bold;
+}
+
+.tiled-bars-container {
+  padding-left: 78px;
+  text-align: center;
+  padding-bottom: 4vw;
+}
+
+.tiled-bars-container p {
+  padding-bottom: 6vw;
+  margin-left: 35vw;
+  margin-right: 35vw;
+}
+
+.tiled-bars-container a {
+  text-decoration: none;
+  color: #B71C1C;
+}
+
+@media (max-width: 80em) {
+
+.tiled-bars-container p {
+  padding-bottom: 6vw;
+  margin-left: 25vw;
+  margin-right:25vw;
+}
+
+}

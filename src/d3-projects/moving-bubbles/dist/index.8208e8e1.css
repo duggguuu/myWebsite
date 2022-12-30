@@ -1,0 +1,25 @@
+body {
+  background: #e8e8e8;
+  font-family: Courier New, Georgia;
+}
+
+#main-wrapper {
+  margin: 40px auto;
+}
+
+#chart {
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 3px 0;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+text {
+  fill: #000;
+}
+
+/*# sourceMappingURL=index.8208e8e1.css.map */

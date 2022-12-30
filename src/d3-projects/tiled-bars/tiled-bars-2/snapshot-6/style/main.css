@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+#menu {
+  margin-left: 20px;
+}
+
+.axis line {
+  stroke: #eee;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.y.axis text {
+  font-size: 11px;
+  fill: #777;
+  font-weight: bold;
+}

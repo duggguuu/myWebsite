@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=0.1">
+<link rel="icon" type="image/x-icon" href="assets/homepage_assets/favicon.svg">
+<style>@import url('https://fonts.cdnfonts.com/css/graphik');</style>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<title>Timed Moving Bubbles</title>
+<link rel="stylesheet" href="d3-projects/moving-bubbles/style/style.css" type="text/css" media="screen" />
+
+<meta property="og:title" content="Yash Gohel | Official Website">
+<meta property="og:description" content="Hi, I am Yash and I Love Playing with Pixels.">
+<meta property="og:image" content="https://yashnakulgohel.com/assets/homepage_assets/meta-image.png"/>
+</head>
+
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- scroll to top -->
+
+<!-- scroll percentage bar -->
+<div class="bar_overlay">
+<div id="progress"></div>
+</div>
+<script>
+document.addEventListener("scroll", function() {
+var scrollTop=document.documentElement["scrollTop"];
+var scrollBottom= (document.documentElement["scrollHeight"])-document.documentElement.clientHeight;
+var scrollPercent=scrollTop/scrollBottom * 100 + "%";
+console.log (scrollPercent);
+document.querySelector("#progress").style.width=scrollPercent;
+},
+{passive:true}
+)
+</script>
+<!-- scroll percentage bar -->
+
+<div class="my-loader" id="my-preloader">
+  <div class="sk-folding-cube">
+    <div class="sk-cube1 sk-cube"></div>
+    <div class="sk-cube2 sk-cube"></div>
+    <div class="sk-cube4 sk-cube"></div>
+    <div class="sk-cube3 sk-cube"></div>
+  </div>
+  <p>Yash is thinking.<br>Please wait...</p>
+</div>
+<script src="JS/preloader.js"></script>
+
+<header>
+  <div class="sidebar close">
+      <div class="logo-details">
+        <i class='bx bx-menu' ></i>
+        <span class="logo_name"> Yash Gohel</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Home</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./design-portfolio.html">
+              <i class='bx bx-palette' ></i>
+              <span class="link_name">UI/UX</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./design-portfolio.html">UI/UX</a></li>
+            <li><a href="./tidbids.html">Tidbids</a></li>
+            <li><a href="./clueshow.html">Clueshow</a></li>
+            <li><a href="./bytes.html">Bytes</a></li>
+            <li><a href="./tax-calendar.html">Tax Calendar</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./d3js-projects.html">
+              <i class='bx bx-line-chart' ></i>
+              <span class="link_name">D3.JS</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">D3.JS</a></li>
+            <li><a href="./d3js-moving-bubbles-chart.html">Moving Bubbles Chart</a></li>
+            <li><a href="./d3js-tiled-bars.html">Tiled Bars</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./p5js-projects.html">
+              <i class='bx bxs-network-chart'></i>
+              <span class="link_name">P5.JS</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./p5js-projects.html">P5.JS Project</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./python-projects.html">
+              <i class='bx bx-code-alt' ></i>
+              <span class="link_name">Python</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./python-projects.html">Python</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./resume-page.html">
+              <i class='bx bx-briefcase-alt-2' ></i>
+            <span class="link_name">Resume</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./resume-page.html">Resume</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./my-sketches.html">
+              <i class='bx bxs-pencil'></i>
+            <span class="link_name">My Art</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./my-sketches.html">My Art</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class='bx bx-link-external' ></i>
+            <span class="link_name">Email</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-github' ></i>
+            <span class="link_name">Github</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-twitter' ></i>
+            <span class="link_name">Twitter</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-linkedin' ></i>
+            <span class="link_name">Linkedin</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-instagram' ></i>
+            <span class="link_name">Instagram</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxs-music' ></i>
+            <span class="link_name">Rock N'Roll</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">Rock N'Roll</a></li>
+          </ul>
+        </li>
+  </ul>
+    </div>
+
+    <script src="JS/header.js"></script>
+
+</header>
+
+<body>
+
+<div class="heading">
+  <h1>D3.JS | Moving Bubbles</h1>
+</div>
+
+<div class="moving-bubbles-context">
+  <p>Inspired by Mr. Nathan Yau's Moving Bubbles Chart, this D3.JS project takes into consideration the job scenario of 250 people. I believe that the below depiction is a really satisfying way to portray the information. But still, it's not the 'best' way.<br><br>The information collected assumed that the respondents are in their 2nd job. The following responses were collected:<br>
+  1. After how many months did you get promoted?<br>
+  2. After how many months did you quit?<br>
+  3. After how many months did you move on to your 2nd job?<br>
+Find the data file <a href="d3-projects/moving-bubbles/data/stages.tsv" target="_blank" rel="noopener noreferrer">here</a>.</p>
+</div>
+
+<div id="main-wrapper">
+	<h1 id="timecount">TIME SO FAR (IN MONTHS): <span class="cnt">0</span></h2>
+    <div id="chart"></div>
+</div><!-- @end #main-wrapper -->
+
+</body>
+
+<script src="d3-projects/moving-bubbles/js/d3.v5.min.js"></script>
+
+<footer>
+  <div class="footer-new">
+    <p>Crafted With ❤️  |  Built from Scratch 🛠️</p>
+    </div>
+</footer>
+
+<script>
+
+const people = {};
+let time_so_far = 0;
+
+// Node size and spacing.
+const radius = 5,
+	  padding = 1, // Space between nodes
+      cluster_padding = 5; // Space between nodes in different stages
+    
+// Dimensions of chart.
+const margin = { top: 30, right: 30, bottom: 30, left: 30 },
+      width = 900 - margin.left - margin.right,
+      height = 360 - margin.top - margin.bottom; 
+
+const svg = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.select("#chart").style("width", (width+margin.left+margin.right)+"px");
+
+
+// Group coordinates and meta info. 
+const groups = {
+    "1st job 🫡": { x: width/5, y: height/2, color: "#F8B22C", cnt: 0, fullname: "1st job 🫡" }, 
+	"promoted 💯": { x: 2*width/5, y: height/2, color: "#1DB3B2", cnt: 0, fullname: "promoted 💯" },
+    "quit 🤨": { x: 3*width/5, y: height/2, color: "#F47585", cnt: 0, fullname: "quit 🤨" },
+    "2nd job ✌️": { x: 4*width/5, y: height/2, color: "#EC1E4F", cnt: 0, fullname: "2nd job ✌️" },
+};
+
+
+// Load data.
+const stages = d3.tsv("d3-projects/moving-bubbles/data/stages.tsv", d3.autoType);
+
+// Once data is loaded...
+stages.then(function(data) {
+    
+    // Consolidate stages by pid.
+    // The data file is one row per stage change.
+    data.forEach(d => {
+        if (d3.keys(people).includes(d.pid+"")) {
+            people[d.pid+""].push(d);
+        } else {
+            people[d.pid+""] = [d];
+        }
+    });
+    
+    // Create node data.
+    var nodes = d3.keys(people).map(function(d) {
+        
+        // Initialize coount for each group.
+        groups[people[d][0].grp].cnt += 1;
+        
+        return {
+            id: "node"+d,
+            x: groups[people[d][0].grp].x + Math.random(),
+            y: groups[people[d][0].grp].y + Math.random(),
+            r: radius,
+            color: groups[people[d][0].grp].color,
+            group: people[d][0].grp,
+            timeleft: people[d][0].duration,
+            istage: 0,
+            stages: people[d]
+        }
+    });
+    
+    
+    // Circle for each node.
+    const circle = svg.append("g")
+        .selectAll("circle")
+        .data(nodes)
+        .join("circle")
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y)
+          .attr("fill", d => d.color);
+    
+    // Ease in the circles.
+    circle.transition()
+      .delay((d, i) => i * 5)
+      .duration(800)
+      .attrTween("r", d => {
+        const i = d3.interpolate(0, d.r);
+        return t => d.r = i(t);
+      });
+
+
+
+    // Group name labels
+    svg.selectAll('.grp')
+      .data(d3.keys(groups))
+      .join("text")
+          .attr("class", "grp")
+          .attr("text-anchor", "middle")
+          .attr("x", d => groups[d].x)
+          .attr("y", d => 50)
+          .text(d => groups[d].fullname);
+          
+    // Group counts
+    svg.selectAll('.grpcnt')
+      .data(d3.keys(groups))
+      .join("text")
+          .attr("class", "grpcnt")
+          .attr("text-anchor", "middle")
+          .attr("x", d => groups[d].x)
+          .attr("y", d => 70)
+          .text(d => groups[d].cnt);
+
+
+
+    // Forces
+    const simulation = d3.forceSimulation(nodes)
+        .force("x", d => d3.forceX(d.x))
+        .force("y", d => d3.forceY(d.y))
+        .force("cluster", forceCluster())
+        .force("collide", forceCollide())
+        .alpha(.09)
+        .alphaDecay(0);
+
+    // Adjust position of circles.
+    simulation.on("tick", () => {    
+        circle
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("fill", d => groups[d.group].color);
+        });
+    
+    // Make time pass. Adjust node stage as necessary.
+    function timer() {
+        
+        nodes.forEach(function(o,i) {
+            o.timeleft -= 1;
+            if (o.timeleft == 0 && o.istage < o.stages.length-1) {
+                // Decrease count for previous group.
+                groups[o.group].cnt -= 1;
+                
+                // Update current node to new group.
+                o.istage += 1;
+                o.group = o.stages[o.istage].grp;
+                o.timeleft = o.stages[o.istage].duration;
+                
+                // Increment count for new group.
+                groups[o.group].cnt += 1;
+            }
+        });
+        
+        // Increment time.
+        time_so_far += 1;
+        d3.select("#timecount .cnt").text(time_so_far);
+        
+        // Update counters.
+        svg.selectAll('.grpcnt').text(d => groups[d].cnt);
+        
+        // Do it again.
+        d3.timeout(timer, 1000);
+        
+    } // @end timer()
+
+    
+    // Start things off after a few seconds.
+    d3.timeout(timer, 2000);
+   
+});
+
+// Force to increment nodes to groups.
+function forceCluster() {
+  const strength = 0.8;
+  let nodes;
+
+  function force(alpha) {
+    const l = alpha * strength;
+    for (const d of nodes) {
+      d.vx -= (d.x - groups[d.group].x) * l;
+      d.vy -= (d.y - groups[d.group].y) * l;
+    }
+  }
+  force.initialize = _ => nodes = _;
+
+  return force;
+}
+
+// Force for collision detection.
+function forceCollide() {
+  const alpha = 0.2; // fixed for greater rigidity!
+  const padding1 = padding; // separation between same-color nodes
+  const padding2 = cluster_padding; // separation between different-color nodes
+  let nodes;
+  let maxRadius;
+
+  function force() {
+    const quadtree = d3.quadtree(nodes, d => d.x, d => d.y);
+    for (const d of nodes) {
+      const r = d.r + maxRadius;
+      const nx1 = d.x - r, ny1 = d.y - r;
+      const nx2 = d.x + r, ny2 = d.y + r;
+      quadtree.visit((q, x1, y1, x2, y2) => {
+      
+        if (!q.length) do {
+          if (q.data !== d) {
+            const r = d.r + q.data.r + (d.group === q.data.group ? padding1 : padding2);
+            let x = d.x - q.data.x, y = d.y - q.data.y, l = Math.hypot(x, y);
+            if (l < r) {
+              l = (l - r) / l * alpha;
+              d.x -= x *= l, d.y -= y *= l;
+              q.data.x += x, q.data.y += y;
+            }
+          }
+        } while (q = q.next);
+        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+      });
+    }
+  }
+
+  force.initialize = _ => maxRadius = d3.max(nodes = _, d => d.r) + Math.max(padding1, padding2);
+
+  return force;
+}
+
+
+</script>

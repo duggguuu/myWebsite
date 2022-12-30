@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/resume-page.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>@import url('https://fonts.cdnfonts.com/css/graphik');</style>
+  <!-- font-family: 'Graphik', sans-serif; -->
+  <style> @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap'); </style>
+  <!-- font-family: 'Comic Neue', cursive; -->
+  <title>Resume | Yash Gohel</title>
+  <meta property="og:title" content="Yash Gohel | Official Website">
+  <meta property="og:description" content="Hi, I am Yash and I Love Playing with Pixels.">
+  <meta property="og:image" content="https://yashnakulgohel.com/assets/homepage_assets/meta-image.png"/>
+</head>
+
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- scroll to top -->
+
+<!-- scroll percentage bar -->
+<div class="bar_overlay">
+<div id="progress"></div>
+</div>
+<script>
+document.addEventListener("scroll", function() {
+var scrollTop=document.documentElement["scrollTop"];
+var scrollBottom= (document.documentElement["scrollHeight"])-document.documentElement.clientHeight;
+var scrollPercent=scrollTop/scrollBottom * 100 + "%";
+console.log (scrollPercent);
+document.querySelector("#progress").style.width=scrollPercent;
+},
+{passive:true}
+)
+</script>
+<!-- scroll percentage bar -->
+
+<div class="my-loader" id="my-preloader">
+  <div class="sk-folding-cube">
+    <div class="sk-cube1 sk-cube"></div>
+    <div class="sk-cube2 sk-cube"></div>
+    <div class="sk-cube4 sk-cube"></div>
+    <div class="sk-cube3 sk-cube"></div>
+  </div>
+  <p>Yash is thinking.<br>Please wait...</p>
+</div>
+<script src="JS/preloader.js"></script>
+
+<header>
+  <div class="sidebar close">
+      <div class="logo-details">
+        <i class='bx bx-menu' ></i>
+        <span class="logo_name"> Yash Gohel</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Home</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./design-portfolio.html">
+              <i class='bx bx-palette' ></i>
+              <span class="link_name">UI/UX</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./design-portfolio.html">UI/UX</a></li>
+            <li><a href="./tidbids.html">Tidbids</a></li>
+            <li><a href="./clueshow.html">Clueshow</a></li>
+            <li><a href="./bytes.html">Bytes</a></li>
+            <li><a href="./tax-calendar.html">Tax Calendar</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./d3js-projects.html">
+              <i class='bx bx-line-chart' ></i>
+              <span class="link_name">D3.JS</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">D3.JS</a></li>
+            <li><a href="./d3js-moving-bubbles-chart.html">Moving Bubbles Chart</a></li>
+            <li><a href="./d3js-tiled-bars.html">Tiled Bars</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./p5js-projects.html">
+              <i class='bx bxs-network-chart'></i>
+              <span class="link_name">P5.JS</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./p5js-projects.html">P5.JS Project</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./python-projects.html">
+              <i class='bx bx-code-alt' ></i>
+              <span class="link_name">Python</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./python-projects.html">Python</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./resume-page.html">
+              <i class='bx bx-briefcase-alt-2' ></i>
+            <span class="link_name">Resume</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./resume-page.html">Resume</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./my-sketches.html">
+              <i class='bx bxs-pencil'></i>
+            <span class="link_name">My Art</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./my-sketches.html">My Art</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class='bx bx-link-external' ></i>
+            <span class="link_name">Email</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-github' ></i>
+            <span class="link_name">Github</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-twitter' ></i>
+            <span class="link_name">Twitter</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-linkedin' ></i>
+            <span class="link_name">Linkedin</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-instagram' ></i>
+            <span class="link_name">Instagram</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">
+              <i class='bx bxs-music' ></i>
+            <span class="link_name">Rock N'Roll</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">Rock N'Roll</a></li>
+          </ul>
+        </li>
+  </ul>
+    </div>
+
+    <script src="JS/header.js"></script>
+
+</header>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector(".sidebar").style.left = "0";
+    } else {
+      document.querySelector(".sidebar").style.left = "-320px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+
+<body class="resume-container">
+
+  <div class="main-resume-big">
+    <img src="assets/resume_assets/my-resume-big.svg">
+  </div>
+
+  <div class="main-resume-small">
+    <img src="assets/resume_assets/my-resume-small.svg">
+  </div>
+
+</body>
+
+<div class="download-resume">
+  <p><a class="resume-link" href="assets/resume_assets/yash-gohel-cv.pdf" target="_blank" rel="noopener noreferrer">DOWNLOAD FULL RESUME</a></p>
+</div>
+
+</html>

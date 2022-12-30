@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>@import url('https://fonts.cdnfonts.com/css/graphik');</style>
+    <!-- font-family: 'Graphik', sans-serif; -->
+    <link rel="icon" type="image/x-icon" href="assets/homepage_assets/favicon.svg">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>P5.JS Project</title>
+    <meta property="og:title" content="Yash Gohel | Official Website">
+    <meta property="og:description" content="Hi, I am Yash and I Love Playing with Pixels.">
+    <meta property="og:image" content="https://yashnakulgohel.com/assets/homepage_assets/meta-image.png"/>
+</head>
+
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- scroll to top -->
+
+<!-- scroll percentage bar -->
+<div class="bar_overlay">
+<div id="progress"></div>
+</div>
+<script>
+document.addEventListener("scroll", function() {
+var scrollTop=document.documentElement["scrollTop"];
+var scrollBottom= (document.documentElement["scrollHeight"])-document.documentElement.clientHeight;
+var scrollPercent=scrollTop/scrollBottom * 100 + "%";
+console.log (scrollPercent);
+document.querySelector("#progress").style.width=scrollPercent;
+},
+{passive:true}
+)
+</script>
+<!-- scroll percentage bar -->
+
+<div class="my-loader" id="my-preloader">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <p>Yash is thinking.<br>Please wait...</p>
+  </div>
+  <script src="JS/preloader.js"></script>
+
+  <header>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx bx-menu' ></i>
+          <span class="logo_name"> Yash Gohel</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./index.html">Home</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./design-portfolio.html">
+                <i class='bx bx-palette' ></i>
+                <span class="link_name">UI/UX</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="./design-portfolio.html">UI/UX</a></li>
+              <li><a href="./tidbids.html">Tidbids</a></li>
+              <li><a href="./clueshow.html">Clueshow</a></li>
+              <li><a href="./bytes.html">Bytes</a></li>
+              <li><a href="./tax-calendar.html">Tax Calendar</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./d3js-projects.html">
+                <i class='bx bx-line-chart' ></i>
+                <span class="link_name">D3.JS</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">D3.JS</a></li>
+              <li><a href="./d3js-moving-bubbles-chart.html">Moving Bubbles Chart</a></li>
+              <li><a href="./d3js-tiled-bars.html">Tiled Bars</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./p5js-projects.html">
+                <i class='bx bxs-network-chart'></i>
+                <span class="link_name">P5.JS</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./p5js-projects.html">P5.JS Project</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./python-projects.html">
+                <i class='bx bx-code-alt' ></i>
+                <span class="link_name">Python</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./python-projects.html">Python</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./resume-page.html">
+                <i class='bx bx-briefcase-alt-2' ></i>
+              <span class="link_name">Resume</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./resume-page.html">Resume</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./my-sketches.html">
+                <i class='bx bxs-pencil'></i>
+              <span class="link_name">My Art</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./my-sketches.html">My Art</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class='bx bx-link-external' ></i>
+              <span class="link_name">Email</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github' ></i>
+              <span class="link_name">Github</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter' ></i>
+              <span class="link_name">Twitter</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-linkedin' ></i>
+              <span class="link_name">Linkedin</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram' ></i>
+              <span class="link_name">Instagram</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxs-music' ></i>
+              <span class="link_name">Rock N'Roll</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">Rock N'Roll</a></li>
+            </ul>
+          </li>
+    </ul>
+      </div>
+
+      <script src="JS/header.js"></script>
+
+  </header>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".sidebar").style.left = "0";
+      } else {
+        document.querySelector(".sidebar").style.left = "-320px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+<body>
+
+    <div class="heading">
+        <h1>P5.JS AUDIO VISUALIZER</h1>
+    </div>
+
+    <div class="mypfivedeets">
+            <p id="p5text">Here'a P5.JS project. Using this amazing library was rather fun! Check out how I made the design particles groove to the frequency of the sound waves.<br><br>The links below will take you to the official p5 editor where you can find the source code. Click on the 'play' button and then click anywhere on the song's background art to start playing.<br><br>Expore the entire collection <a class="nolinkp5" href="https://editor.p5js.org/yashgohel/collections/od6INUSH8">over here.</a></p>
+
+        <h2 id="p5head">Choose a song from the list below...</h2>
+
+        <div class="full-song-list grid">
+            <ul class="song-list">
+                <li class="songlist"><a href="#" class="nolink">1. Highway To Hell - ACDC</li>
+                <li class="songlist"><a href="#" class="nolink">2. We Will Rock You - Queen</a></li>
+                <li class="songlist"><a href="#" class="nolink">3. Sweet Child O' Mine - Guns N' Roses</a></li>
+                <li class="songlist"><a href="#" class="nolink">4. Knockin' On Heaven's Door - Eric Clapton,</a></li>
+                <li class="songlist"><a href="#" class="nolink">5. Back in Black - ACDC</a></li>
+                <li class="songlist"><a href="#" class="nolink">6. Shape Of You - Ed Sheeran</a></li>
+                <li class="songlist"><a href="#" class="nolink">7. God's Plan - Drake</li>
+                <li class="songlist"><a href="#" class="nolink">8. Rolling In The Deep - Adele</a></li>
+                <li class="songlist"><a href="#" class="nolink">9. All The Stars - Kendrick Lamar x SZA</a></li>
+                <li class="songlist"><a href="#" class="nolink">10. Some Nights - Fun</a></li>
+                <li class="songlist"><a href="#" class="nolink">11. Rock You Like A Hurrican - Scorpions</a></li>
+                <li class="songlist"><a href="#" class="nolink">12. Stand By Me - Ben E King</a></li>
+            </ul>
+        </div>
+
+        <div class="p5-demo">
+            <h2 id="p5head">Here's A Quick Demo</h2><br>
+            <p id="p5-text">click anywhere on the canvas below to play/pause</p>
+            <div class="p5-screen">
+                <iframe width="600" height="600" src="https://editor.p5js.org/yashgohel/full/4xaoWMd3U"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="p5explain">
+        <p>This is one of my most exciting projects. During my journey of exploring various JavaScript libraries, I came aross P5.JS - and I swear, I fell I fell in love with the capabilities and endless possibilities offered by P5. The only other library I love more than P5 is THREE.JS. But that offers a whole other functionality. I'd love to walk you through the code step by step.</p><br>
+        <p><strong>Step 1</strong><br>Let's load 'preload' the sound and image before we 'setup' the project canvas.</p>
+        <code>
+            <div>
+            function preload() {<br>
+                song=loadSound('highway to hell.mp3')<br>
+                img=loadImage('highway to hell.svg')<br>
+              }
+            </div>
+        </code>
+        <p><strong>Step 2</strong><br>Some constant variables need to be defined.</p>
+        <code>
+            <div>
+            var song<br>
+            var img<br>
+            var fft<br>
+            var particles=[]<br>
+            </div>
+        </code>
+        <p><strong>Step 3</strong><br>We need the 'click to play' function.</p>
+        <code>
+    <div>
+            function mouseClicked() {<br>
+                if (song.isPlaying()) {<br>
+                  song.pause()<br>
+                  noLoop() }<br>
+                else {<br>
+                  song.play()<br>
+                  loop()}<br>
+                }
+        </div>
+    </code>
+        <p><strong>Step 4</strong><br>'FTT' helps to detect the sound and forms waves.</p>
+        <code>
+    <div>
+            function setup() {<br>
+                var canvas = createCanvas(512, 512);<br>
+                fft=new p5.FFT(0.5)<br>
+              }
+        </div>
+    </code> 
+        <p><strong>Step 5</strong><br>With the help of a FTT, generate a circular wave structure.</p>
+        <code>
+    <div>
+            var wave = fft.waveform()<br>
+            for (var t=-1; t<=1; t+=2) {<br>
+            beginShape()<br>
+            for (var i=0; i<width; i+=5) {<br>
+              var index = floor (map(i,0,180,0,wave.length-1))<br>
+              var r=map(wave[index],-1,1,100,150)<br>
+              var x=r*sin(i) * t<br>
+              var y=r*cos(i)<br>
+              vertex (x,y)<br>
+            }<br>
+            endShape()<br>
+            }
+        </div>
+    </code> 
+        <p><strong>Step 6</strong><br>Generate particles around the waveform.</p>
+        <code>
+    <div>
+            var p=new Particle()<br>
+            particles.push(p)<br>
+            <br>
+            class Particle {<br>
+                constructor() {<br>
+                  this.pos=p5.Vector.random2D().mult(150)<br>
+                  this.vel=createVector(0,0)<br>
+                  this.acc=this.pos.copy().mult(random(0.0001,0.00001))<br>
+                  this.w=random(3,7)<br>
+                  this.color = [random (161,255), random(132,212), random (81,100)]<br>
+              }
+        </div>
+    </code> 
+        <p><strong>Step 7</strong><br>To update, show, and delete the articles, we use the following.</p>
+        <code>
+    <div>
+            for (var i = particles.length - 1; i >= 0; i--) {<br>
+                if (!particles[i].edges()) {<br>
+                particles[i].update(amp > 230)<br>
+                particles[i].show()<br>
+                } else {<br>
+                  particles.splice(i,1)<br>
+                }
+        </div>
+    </code> 
+        <p><strong>Step 8</strong><br>This function will remove all the particles once they leave the canvas.</p>
+        <code>
+    <div>
+            edges () {<br>
+                if (this.pos.x <-width/2 ||<br>
+                this.pos.x > width/2 ||<br>
+                this.pos.y <-height/2 ||<br>
+                this.pos.y > height/2) {<br>
+                  return true<br>
+                } else {<br>
+                  return false<br>
+                }<br>
+              }
+        </div>
+    </code> 
+        <p><strong>Step 9</strong><br>For beat detetcion and to make the particles & background image groove, we need to call the 'analyze' and 'get energy' functions.</p>
+        <code>
+    <div>
+            fft.analyze()<br>
+            amp=fft.getEnergy(20,200)<br>
+            <br>
+            push()<br>
+            if (amp > 200) {<br>
+              rotate (random (-3, 3))<br>
+            }
+        </div>
+    </code> 
+        <p><strong>Step 10</strong><br>Call 'this.pos.add' function a couple more times to refine the grooves and voila! That's all.</p>
+        <code>
+    <div>
+            update (cond) {<br>
+                this.vel.add(this.acc)<br>
+                this.pos.add(this.vel)<br>
+                if (cond) {<br>
+                  this.pos.add(this.vel)<br>
+                  this.pos.add(this.vel)<br>
+                  this.pos.add(this.vel)<br>
+                  this.pos.add(this.vel)<br>
+                  this.pos.add(this.vel)<br>
+                  this.pos.add(this.vel)<br>
+                }<br>
+              }
+        </div>
+    </code> 
+        <p><strong>Final Code</strong><br>Here's the entire code that led to this great audio visualization.</p>
+        <code>
+    <div>
+            var song<br>
+            var img<br>
+            var fft<br>
+            var particles=[]<br>
+            <br>
+            function preload() {<br>
+            song=loadSound('highway to hell.mp3')<br>
+            img=loadImage('highway to hell.svg')<br>
+            }<br>
+            <br>
+            function setup() {<br>
+            var canvas = createCanvas(512, 512);<br>
+            angleMode(DEGREES)<br>
+            imageMode(CENTER)<br>
+            fft=new p5.FFT(0.5)<br>
+            }<br>
+            <br>
+            function draw() {<br>
+            background(0)<br>
+            stroke(255)<br>
+            strokeWeight(2)<br>
+            noFill()<br>
+            <br>
+            translate (width/2,height/2)<br>
+            <br>
+            fft.analyze()<br>
+            amp=fft.getEnergy(20,200)<br>
+            <br>
+            push()<br>
+            if (amp > 200) {<br>
+                rotate (random (-3, 3))<br>
+            }<br>
+            <br>
+            image(img,0,0,width+100,height+100)<br>
+            pop()<br>
+            <br>
+            var alpha = map(amp,0,255,100,150)<br>
+            fill (248, 178, 44, alpha)<br>
+            noStroke()<br>
+            <br>
+            var wave = fft.waveform()<br>
+            <br>
+            for (var t=-1; t<=1; t+=2) {<br>
+            <br>
+            beginShape()<br>
+            for (var i=0; i<width; i+=5) {<br>
+                var index = floor (map(i,0,180,0,wave.length-1))<br>
+                var r=map(wave[index],-1,1,100,150)<br>
+                var x=r*sin(i) * t<br>
+                var y=r*cos(i)<br>
+                vertex (x,y)<br>
+            }<br>
+            endShape()<br>
+            }<br>
+            <br>
+            var p=new Particle()<br>
+            particles.push(p)<br>
+            <br>
+            for (var i = particles.length - 1; i >= 0; i--) {<br>
+                if (!particles[i].edges()) {<br>
+                particles[i].update(amp > 230)<br>
+                particles[i].show()<br>
+                } else {<br>
+                particles.splice(i,1)<br>
+                }<br>
+            }<br>
+            } <br>
+            <br>
+            function mouseClicked() {<br>
+            if (song.isPlaying()) {<br>
+                song.pause()<br>
+                noLoop() }<br>
+            else {<br>
+                song.play()<br>
+                loop()}<br>
+            }<br>
+            <br>
+            class Particle {<br>
+            constructor() {<br>
+                this.pos=p5.Vector.random2D().mult(150)<br>
+                this.vel=createVector(0,0)<br>
+                this.acc=this.pos.copy().mult(random(0.0001,0.00001))<br>
+                this.w=random(3,7)<br>
+                // this.color = [random (200,255), random(200,255), random (200,255)]<br>
+                this.color = [random (161,255), random(132,212), random (81,100)]
+            }<br><br>
+            <br>
+            update (cond) {<br>
+                this.vel.add(this.acc)<br>
+                this.pos.add(this.vel)<br>
+                if (cond) {<br>
+                this.pos.add(this.vel)<br>
+                this.pos.add(this.vel)<br>
+                this.pos.add(this.vel)<br>
+                this.pos.add(this.vel)<br>
+                this.pos.add(this.vel)<br>
+                this.pos.add(this.vel)<br>
+                }<br>
+            }
+            
+            edges () {<br>
+                if (this.pos.x <-width/2 || this.pos.x > width/2 || this.pos.y <-height/2 || this.pos.y > height/2) {<br>
+                return true<br>
+                } else {<br>
+                return false<br>
+                }<br>
+            }<br>
+            <br>
+            <br>
+            show () {<br>
+                noStroke ()<br>
+                fill(this.color)<br>
+                ellipse(this.pos.x, this.pos.y, this.w)<br>
+            }<br>
+            }
+        </div>
+    </code> 
+    </div>
+
+</body>
+
+<footer>
+  <div class="footer-new">
+    <p>Crafted With ❤️  |  Built from Scratch 🛠️</p>
+    </div>
+</footer>
+
+</html>

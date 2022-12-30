@@ -1,0 +1,62 @@
+body {
+    font-family: 'Graphik', sans-serif;
+    background: #ffffff;
+    padding-left: 78px;
+}
+#main-wrapper {
+    margin-top: 6vw;
+}
+#chart {
+    margin: 0px auto;
+}
+h1 {
+	font-size: 2em;
+	padding: 3px 0px;
+	font-weight: normal;
+    text-align: center;
+}
+text {
+    fill: #000;
+}
+
+.heading h1 {
+    font-weight: bold;
+}
+
+.moving-bubbles-context p {
+    margin-left: 35vw;
+    margin-right: 35vw;
+    text-align: center;
+    line-height: 1vw;
+}
+
+@media (max-width: 80em) {
+
+    .moving-bubbles-context p {
+      margin-left: 25vw;
+      margin-right: 25vw;
+    }
+  
+  }
+
+  #timecount {
+    font-weight: bold;
+  }
+
+
+.moving-bubbles-context a {
+    color: #B71C1C;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

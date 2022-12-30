@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/clueshow.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/homepage_assets/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-default.min.css">
+
+    <style>@font-face {font-family: my_gt_cinetype_regular; src: url(fonts/gt_cinetype/GT-Cinetype-Regular-Trial.otf);}</style>
+    <style>@font-face {font-family: my_gt_cinetype_bold; src: url(fonts/gt_cinetype/GT-Cinetype-Bold-Trial.otf);}</style>
+    <style>@font-face {font-family: my_gt_flexa_regular; src: url(fonts/gt_flexa/GT-Flexa-Compressed-Regular-Trial.otf);}</style>
+    <style>@font-face {font-family: my_gt_flexa_bold; src: url(fonts/gt_flexa/GT-Flexa-Bold-Trial.otf);}</style>
+    <style>@font-face {font-family: my_gt_flexa_cn_bold; src: url(fonts/gt_flexa/GT-Flexa-Condensed-Bold-Trial.otf);}</style>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Clueshow | Design Portfolio</title>
+
+    <meta property="og:title" content="Yash Gohel | Official Website">
+    <meta property="og:description" content="Hi, I am Yash and I Love Playing with Pixels.">
+    <meta property="og:image" content="https://yashnakulgohel.com/assets/homepage_assets/meta-image.png"/>
+</head>
+
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- scroll to top -->
+
+<!-- scroll percentage bar -->
+<div class="bar_overlay">
+<div id="progress"></div>
+</div>
+<script>
+document.addEventListener("scroll", function() {
+var scrollTop=document.documentElement["scrollTop"];
+var scrollBottom= (document.documentElement["scrollHeight"])-document.documentElement.clientHeight;
+var scrollPercent=scrollTop/scrollBottom * 100 + "%";
+console.log (scrollPercent);
+document.querySelector("#progress").style.width=scrollPercent;
+},
+{passive:true}
+)
+</script>
+<!-- scroll percentage bar -->
+
+<div class="my-loader" id="my-preloader">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <p>Yash is thinking.<br>Please wait...</p>
+  </div>
+  <script src="JS/preloader.js"></script>
+
+  <header>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx bx-menu' ></i>
+          <span class="logo_name"> Yash Gohel</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./index.html">Home</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./design-portfolio.html">
+                <i class='bx bx-palette' ></i>
+                <span class="link_name">UI/UX</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="./design-portfolio.html">UI/UX</a></li>
+              <li><a href="./tidbids.html">Tidbids</a></li>
+              <li><a href="./clueshow.html">Clueshow</a></li>
+              <li><a href="./bytes.html">Bytes</a></li>
+              <li><a href="./tax-calendar.html">Tax Calendar</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./d3js-projects.html">
+                <i class='bx bx-line-chart' ></i>
+                <span class="link_name">D3.JS</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">D3.JS</a></li>
+              <li><a href="./d3js-moving-bubbles-chart.html">Moving Bubbles Chart</a></li>
+              <li><a href="./d3js-tiled-bars.html">Tiled Bars</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./p5js-projects.html">
+                <i class='bx bxs-network-chart'></i>
+                <span class="link_name">P5.JS</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./p5js-projects.html">P5.JS Project</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./python-projects.html">
+                <i class='bx bx-code-alt' ></i>
+                <span class="link_name">Python</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./python-projects.html">Python</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./resume-page.html">
+                <i class='bx bx-briefcase-alt-2' ></i>
+              <span class="link_name">Resume</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./resume-page.html">Resume</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./my-sketches.html">
+                <i class='bx bxs-pencil'></i>
+              <span class="link_name">My Art</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./my-sketches.html">My Art</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class='bx bx-link-external' ></i>
+              <span class="link_name">Email</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github' ></i>
+              <span class="link_name">Github</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter' ></i>
+              <span class="link_name">Twitter</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-linkedin' ></i>
+              <span class="link_name">Linkedin</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram' ></i>
+              <span class="link_name">Instagram</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxs-music' ></i>
+              <span class="link_name">Rock N'Roll</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">Rock N'Roll</a></li>
+            </ul>
+          </li>
+    </ul>
+      </div>
+
+      <script src="JS/header.js"></script>
+
+  </header>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".sidebar").style.left = "0";
+      } else {
+        document.querySelector(".sidebar").style.left = "-320px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+<body class="clueshow-container">
+
+    <div class="top-banner">
+        <img class="banner-top" src="assets/clueshow_assets/cs_top.svg">
+        <h3>binge responsibly</h3>
+    </div>
+
+    <h4>Current Scenario</h4>
+    <p>From just a few b&w films to thoudands of shows and movies popping up within a year, the media industry has come a long way. There are so many great shows to choose from but so little time. Also, not all content suits our interests and we end up wasting time.<br><br>As of March 2020, Netflix had 2.2 million minutes of content available. More than 30k hours of content is uploaded on Youtube every minute. We possibly cannot manage to watch it all. We mindlessly scroll through the most irrelevant content.<br><br>I believe, in the near future, the over-the-top (OTT) platforms/channels having the most well rounded content will take away the trophy of maximum viewers.</p>
+
+    <div class="flow">
+        <h4>How I Began Thinking About this Project?</h4>
+        <p>My dad! He is really choosy about the shows he watches. He spends hours deciding watch to watch. The problem? This is what ‘he’ thinks. But in reality, he is simply “overwhelmed” by the number of options. After some research, I found out that this a universal issue.</p>
+    </div>
+
+        <h4>The Flow of Thoughts</h4>
+        <p><br>What if there was an app to simplify recommendations? But all the major streaming sites have amazing algorithms to figure that out.<br><br>So, what can I do different? What about an app which does more than ‘just’ recommend?<br><br>Maybe, show recommendations based on 'time of the day', 'location', etc instead of showing recommendations based on what we are watching.<br><br>Also, a large number of users are not able to afford the shift to a subscription based economy. It was time to think along those lines too.<br><br>Therefore, here is my take on the future of media consumption!</p>
+
+    <div class="intro">
+        <img src="assets/clueshow_assets/cs_intro.svg"></img>
+    </div>
+
+    <div class="problems">
+        <h4>Key Problems That Inspired this Project</h4>
+        <div class="problems-grid">
+            <div class="problems-one">
+                <div>
+                    <p><strong>Content Fragmentation</strong><br><br>Fragmentation of various media sources and devices has made it increasingly complex for users to discover & manage media consumption. Q. What is Fragmentation? A. Fragmentation = the process or state of breaking or being broken into fragments.</p>
+                </div>
+                <div>
+                    <p><strong>Excessive Expenditure on OTT Subscriptions</strong><br><br>There is a lurking ‘FOMO’ when everyone around is watching a ‘trending’ show and we aren’t able to watch it. This is mostly because of unavilibilty of subscriptions. Eventually, we end up spending recklessly. Instead, it’d be better if we prioritized what we watch and managed our subscriptions.</p>
+                </div>
+            </div>
+            <div class="problems-two">
+                <div>
+                    <p><strong>Recommendation Overload</strong><br><br>Consumers are overburdened & overwhelmed by the large number of choices. An average human makes approx 35k choices per day. A study made by professor Barry Schwartz at Swarthmore College showed that too many options can lead to stress, anxiety and discontent.</p>
+                </div>
+                <div>
+                    <p><strong>Short Attention Span</strong><br><br>Getting easily bored of any form of media is the ‘cult’ now. Our brains have started adapting to a 15-30 seconds entertainment formula. Users need to focus on what they like for a longer period of time and truly enjoy the storylines without any distractions and absurd suggestions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="signup">
+        <img src="assets/clueshow_assets/cs_sign_up.svg"></img>
+    </div>
+
+    <h4>Research Methodologies</h4>
+    <p>>I prepared a Google form and sent it to 250 respondents. The age group I chose was between 16-50. This was delberately done because OTT platfomrs and streaming services are most useful to this age group.</p>
+    <section class="splide clueshow-research" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide research-slider"><img src="assets/clueshow_assets/research/r1.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/clueshow_assets/research/r2.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/clueshow_assets/research/r3.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/clueshow_assets/research/r4.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/clueshow_assets/research/r5.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/clueshow_assets/research/r6.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/clueshow_assets/research/r7.svg"></li>
+        </ul>
+        </div>
+    </section>
+                                    <script>
+                                        var splide = new Splide( '.clueshow-research', {
+                                            perPage: 1,
+                                            rewind : true,
+                                        } );
+                                        splide.mount();
+                                    </script>  
+
+    <h4>User Journey Mapping</h4>
+    <p>There were 2 core features this application is solving:<br>- simplified recommendation for effortless viewing -<br>- subscription management to save time & money -<br><br>I created a user flow from start till the end including various touchpoints and numerous emotions a user might go through while using the app.</p>
+    <div class="journey">
+        <img src="assets/clueshow_assets/cs_journeymap.svg">
+    </div>
+
+    <h4>Wireframing</h4>
+    <p>After countless ideas and sketches, I came up with a wireframe that would strike a blance between a browser and a streaming platform. This was because I wanted to provide users a one-stop-solution. I took inspiration from Google Chrome, Netflix, and Splitwise and merged them with a few of original ideas.<br><br>The reason I took inspiration from such popular apps is because people hate change. Once, they get used to a product, they accept that as a common convention of working. For example, we all have a fixed idea about how a browser’s interface should work. Anything different would through us off guard and we might not use the app again. So, in order to create a familiarity, below were the wireframes I made.</p>
+
+    <p class="download-wireframe"><a class="wireframe-download" href="assets/clueshow_assets/clueSHOW lo-fi prototype.pdf" target="_blank" rel="noopener noreferrer">Download wireframes in High Resolution to view them? Click here.</a></p>
+
+    <h4>Design System</h4>
+    <p>A unique color system comprising of two primary colors: canary yellow & raisin purple. The goal was to deviate from the typical dark theme. Although it makes more sense for media sites to adapt to dark theme, I wanted to test out how’d users respond to a light theme. According to research, 77% of users found the color combination and the light theme rather pleasant to use. This is the reason I went ahead and implemented it in my portfolio.</p>
+
+    <div class="design-system">
+        <img src="assets/clueshow_assets/cs_ds.svg">
+    </div>
+
+    <div class="ui-part-one">
+
+        <h4>Prototyping</h4>
+        <p>(PS. excited to share this part)</p>
+        <p>A 8pt and 24pt system. All spacings and containers are in multiples of 24. There are four font sizes: 16pts, 24pts, 32pts, and 48pts</p>
+        <div class="welcome-screen">
+            <img src="assets/clueshow_assets/cs_pt.svg">
+        </div>
+
+        <h4>3 Modes of Recommendations</h4>
+        <div class="image-box">
+            <img src="assets/clueshow_assets/modes of recommendation/Profile morning view.svg">
+            <img src="assets/clueshow_assets/modes of recommendation/Profile on the move.svg">
+            <img src="assets/clueshow_assets/modes of recommendation/Profile travel mode.svg">
+        </div>
+
+        <h4>Know Your User</h4>
+        <div class="image-box">
+            <img src="assets/clueshow_assets/kyc/User Onboarding 1a.svg">
+            <img src="assets/clueshow_assets/kyc/User Onboarding 4.svg">
+        </div>
+        <p>It’s important to know the user to give them better recommendations. The user can also ‘skip’ this section. The app also pulls recommendations from the friends the user follows. This data will be integrated via Facebook, Google, Apple ID, and Instagram.</p>
+
+        <h4>Single Show/Movie View</h4>
+        <div class="image-box">
+            <img class="cs_img_gen" src="assets/clueshow_assets/single view/Watchlist single show click view.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/single view/Watchlist single management view.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/single view/Watchlist single watch now view.svg">
+        </div>
+
+        <h4>Share a Sub</h4>  
+        <div class="image-box">
+            <img class="cs_img_gen" src="assets/clueshow_assets/share a sub/Split choose service.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/share a sub/Split choose plan.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/share a sub/Split slots.svg">
+        </div>
+
+        <h4>Subscription Management</h4>
+        <div class="image-box">
+            <img class="cs_img_gen" src="assets/clueshow_assets/sub management/Split created.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/sub management/Split created chat.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/sub management/Split created creds.svg">
+        </div>
+
+        <h4>Watchlist Home View</h4>
+        <div class="image-box">
+            <img class="cs_img_gen" src="assets/clueshow_assets/watchlist view/Add subscriptions.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/watchlist view/Watchlist expand view.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/watchlist view/Watchlist expand view 1.svg">
+        </div>
+
+        <h4>A unique Way of Tracking</h4>   
+        <div class="image-box">
+            <img class="cs_img_gen" src="assets/clueshow_assets/unique way of tracking/management main.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/unique way of tracking/management view full 1.svg">
+            <img class="cs_img_gen" src="assets/clueshow_assets/unique way of tracking/management view full 3.svg">
+        </div>
+        <p>Do you have an endless list of media to watch? Don’t worry! The management feature allows you to accurately scehdule the upcoming TV shows and movies you want to watch. Give the details of your shows and how much time you want to spend, etc. The app will automatically fix up the mess for you.</p>
+
+        <div class="continue-watching">
+            <h4>Continue Watching</h4>  
+            <div class="image-box">
+                <img class="cs_img_gen" src="assets/clueshow_assets/browser/Browswer All Tabs View.svg">
+                <img class="cs_img_gen" src="assets/clueshow_assets/browser/Browswer continue watching.svg">
+            </div>
+            <p>The ‘Continue Watching’ tab is following the ‘dark theme’ as viewers usually prefer a dark background while viewing movies and shows. Through this section the user can also switch between the ‘subscribed’ platforms.</p>
+        </div>
+    </div>
+
+    <div class="ui-part-two">
+
+        <h4>Instant Alerts</h4>
+        <div class="alerts">
+            <img src="assets/clueshow_assets/Split notifications.svg">
+        </div>
+
+        <h4>The Prototype at a Glance</h4>
+        <div class="prototype">
+            <img src="assets/clueshow_assets/ptatag.svg">
+        </div>
+
+        <p>and lastly...</p>
+
+        <h4>Television View</h4>
+        <div class="television-view">
+            <img src="assets/clueshow_assets/cs_tv.svg">
+        </div>
+
+        <p>Once the viewing parameters are set, the user can directly login from the Televison app and view the shows and movies.</p>
+
+    </div>
+
+    <h4>Key Takeaways</h4>
+    <p>Design is ever evolving. Sometimes, designers get stuck on what they started out with. They refuse to re-iterate. It happened with me, too. It became really important for me to be open-minded when it came to this project.</p>
+
+    <footer>
+      <div class="footer-new">
+        <p>Crafted With ❤️  |  Built from Scratch 🛠️</p>
+        </div>
+    </footer>
+
+</html>

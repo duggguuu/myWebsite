@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>@import url('https://fonts.cdnfonts.com/css/graphik');</style>
+    <!-- font-family: 'Graphik', sans-serif; -->
+    <link rel="icon" type="image/x-icon" href="assets/homepage_assets/favicon.svg">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>100 Days of Python</title>
+    <meta property="og:title" content="Yash Gohel | Official Website">
+    <meta property="og:description" content="Hi, I am Yash and I Love Playing with Pixels.">
+    <meta property="og:image" content="https://yashnakulgohel.com/assets/homepage_assets/meta-image.png"/>
+</head>
+
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- scroll to top -->
+
+<!-- scroll percentage bar -->
+<div class="bar_overlay">
+<div id="progress"></div>
+</div>
+<script>
+document.addEventListener("scroll", function() {
+var scrollTop=document.documentElement["scrollTop"];
+var scrollBottom= (document.documentElement["scrollHeight"])-document.documentElement.clientHeight;
+var scrollPercent=scrollTop/scrollBottom * 100 + "%";
+console.log (scrollPercent);
+document.querySelector("#progress").style.width=scrollPercent;
+},
+{passive:true}
+)
+</script>
+<!-- scroll percentage bar -->
+
+<div class="my-loader" id="my-preloader">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <p>Yash is thinking.<br>Please wait...</p>
+  </div>
+  <script src="JS/preloader.js"></script>
+
+  <header>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx bx-menu' ></i>
+          <span class="logo_name"> Yash Gohel</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./index.html">Home</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./design-portfolio.html">
+                <i class='bx bx-palette' ></i>
+                <span class="link_name">UI/UX</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="./design-portfolio.html">UI/UX</a></li>
+              <li><a href="./tidbids.html">Tidbids</a></li>
+              <li><a href="./clueshow.html">Clueshow</a></li>
+              <li><a href="./bytes.html">Bytes</a></li>
+              <li><a href="./tax-calendar.html">Tax Calendar</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./d3js-projects.html">
+                <i class='bx bx-line-chart' ></i>
+                <span class="link_name">D3.JS</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">D3.JS</a></li>
+              <li><a href="./d3js-moving-bubbles-chart.html">Moving Bubbles Chart</a></li>
+              <li><a href="./d3js-interactive-charts.html">Interactive Charts</a></li>
+              <li><a href="./d3js-animated-pyramid.html">Animated Pyramid</a></li>
+              <li><a href="./d3js-tiled-bars.html">Tiled Bars</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./p5js-projects.html">
+                <i class='bx bxs-network-chart'></i>
+                <span class="link_name">P5.JS</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./p5js-projects.html">P5.JS Project</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./python-projects.html">
+                <i class='bx bx-code-alt' ></i>
+                <span class="link_name">Python</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./python-projects.html">Python</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./resume-page.html">
+                <i class='bx bx-briefcase-alt-2' ></i>
+              <span class="link_name">Resume</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./resume-page.html">Resume</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./my-sketches.html">
+                <i class='bx bxs-pencil'></i>
+              <span class="link_name">My Art</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./my-sketches.html">My Art</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class='bx bx-link-external' ></i>
+              <span class="link_name">Email</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github' ></i>
+              <span class="link_name">Github</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter' ></i>
+              <span class="link_name">Twitter</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-linkedin' ></i>
+              <span class="link_name">Linkedin</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram' ></i>
+              <span class="link_name">Instagram</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxs-music' ></i>
+              <span class="link_name">Rock N'Roll</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">Rock N'Roll</a></li>
+            </ul>
+          </li>
+    </ul>
+      </div>
+
+      <script src="JS/header.js"></script>
+
+  </header>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".sidebar").style.left = "0";
+      } else {
+        document.querySelector(".sidebar").style.left = "-320px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+<body>
+
+    <div class="heading">
+        <h1>100 DAYS OF PYTHON</h1>
+    </div>
+
+    <div class="python-description">
+        <p>This Project below is Based on the Udemy course:<a class="noud-black-color" href="https://www.udemy.com/course/100-days-of-code/" target="_blank" rel="noopener noreferrer"> 100 Days of Code: The Complete Python Pro Bootcamp.</a> Scroll down for complete project list or go to my <a class="noud-black-color" href="https://github.com/duggguuu/100-Days-of-Python-Projects" target="_blank" rel="noopener noreferrer">github repository...</a></p>
+    </div>
+
+<div class="python-grid" id="allprojects">
+
+    <div class="python-column-one">
+
+            <div class="beginner-python" id="python-boxes">
+                <p id="beginner">🛡️ Beginner</p>
+                <ul>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20001%20-%20Order%20Pizza">Day 001: Working with Variables in Python to Manage Data </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20002%20-%20Love%20Calculator">Day 002: Understanding Data Types and How to Manipulate Strings </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20003%20-%20Treasure%20Island">Day 003: Control Flow and Logical Operators </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20004%20-%20Rock%20Paper%20Scissors">Day 004: Randomisation and Python Lists </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20005%20-%20Password%20Generator">Day 005: Python Loops </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20006%20%26%20007%20-%20Hangman">Day 006: Python Functions &amp; Karel </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20006%20%26%20007%20-%20Hangman">Day 007: Hangman </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20008%20-%20Ceasar%20Cipher">Day 008: Function Parameters &amp; Caesar Cipher </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20009%20-%20Secret%20Auction%20Program">Day 009: Dictionaries, Nesting and the Secret Auction </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20010%20-%20Calculator">Day 010: Functions with Outputs </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20011%20-%20Blackjack">Day 011: The Blackjack Capstone Project </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20012%20-%20Number%20Guessing%20Game">Day 012: Scope &amp; Number Guessing Game </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20013%20%26%20014%20-%20Higher%20or%20Lower%20Game">Day 013: Debugging: How to Find and Fix Errors in your Code </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20013%20%26%20014%20-%20Higher%20or%20Lower%20Game">Day 014: Higher Lower Game Project </a></li>
+                </ul>
+            </div>
+            <div class="intermediate-python" id="python-boxes">
+                <p id="intermediate">🏹 Intermediate</p>
+                <ul>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20015%20-%20CoffeeMachine">Day 015: Local Development Environment Setup &amp; the Coffee Machine </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20016%20%26%20017%20-%20Quiz%20V%201.0">Day 016: Object Oriented Programming (OOP) </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20016%20%26%20017%20-%20Quiz%20V%201.0">Day 017: The Quiz Project &amp; The Benefits of OOP </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20018%20-%20Hirst%20Painting%20Project">Day 018: Turtle &amp; the Graphical User Interface (GUI) </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20019%20-%20Turtle%20Racing%20Game">Day 019: Instances, State and Higher Order Functions </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20020%20-%20Snake%20Game">Day 020: Build the Snake Game Part 1: Animation &amp; Coordinates </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20021%20%26%20022%20-%20Pong%20Arcade%20Game">Day 021: Build the Snake Game Part 2: Inheritance &amp; List Slicing </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20021%20%26%20022%20-%20Pong%20Arcade%20Game">Day 022: Build Pong: The Famous Arcade Game </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20023%20-%20Turtle%20Road%20Crossing%20Game">Day 023: The Turtle Crossing Capstone Project </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20024%20-%20Snake%20Game%20With%20High%20Score">Day 024: Files, Directories and Paths </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20025%20-%20US%20States%20Game">Day 025: Working with CSV Data and the Pandas Library </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20026%20-%20NATO%20Alphabet%20Project">Day 026: List Comprehension and the Nato Alphabet </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20027%20-%20Mile%20to%20Kilometers%20Converter">Day 027: Tkinter, *args, **kwargs and Creating GUI Programs </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20028%20-%20Pomodoro%20App">Day 028: Tkinter, Dynamic Typing and the Pomodoro GUI Application </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20029%20-%20Password%20Manager">Day 029: Building a Password Manager GUI App with Tkinter </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20030%20-%20Password%20Manager%20Version%202.0">Day 030: Errors, Exceptions and JSON Data: Improving the Password Manager </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20031%20-%20Flash%20Card%20Project">Day 031: Flash Card App Capstone Project </a></li>
+                </ul>
+            </div>
+            <div class="intermediate-plus-python" id="python-boxes">
+                <p id="intermediate">👨‍💻 Intermediate+</p>
+                <ul>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20032%20-%20Send%20Email">Day 032: Send Email (smtplib) &amp; Manage Dates (datetime) - Automated Birthday Wisher </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20033%20-%20International%20Space%20Station%20Notifier">Day 033: API Endpoints &amp; API Parameters - ISS Overhead Notifier </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20034%20-%20Quiz%20V%202.0">Day 034: API Practice - Creating a GUI Quiz App </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20035%20-%20Send%20SMS">Day 035: Keys, Authentication &amp; Environment Variables - Telegram Rain Notifier </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20036%20-%20Stock%20Market%20News%20Alert%20Project">Day 036: Stock Trading News Alert Project </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20037%20-%20Habit%20Tracker">Day 037: Habit Tracking Project: API Post Requests &amp; Headers </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20038%20-%20Workout%20Tracking">Day 038: Workout Tracking Using Google Sheets </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20039%20-%20Flight%20Deal%20Finder">Day 039: Capstone Part 1: Flight Deal Finder </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20040%20to%20044%20-%20Learning%20HTML">Day 040 to Day 044: Introduction to HTML and CSS </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20045%20-%20Top%20100%20Movies%20to%20Watch">Day 045: Web Scraping with Beautiful Soup </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20046%20-%20Spotify%20Playlist">Day 046: Create a Spotify Playlist Using The Musical Time Machine </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20047-%20Amazon%20Price%20Tracker">Day 047: Create an Automated Amazon Price Tracker </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20048%20-%20Selenium%20Webdriver%20Browser%20and%20Game%20Playing%20Bot">Day 048: Selenium Webdriver Browser and Game Playing Bot </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20049%20-%20Linkedin%20Job%20Automation">Day 049: Automating Job Applications on LinkedIn </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20050%20-%20Auto%20Tinder%20Swiping%20Bot">Day 050: Auto Tinder Swiping Bot </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20051%20-%20Complaint%20Twitter%20Bot">Day 051: Internet Speed Twitter Complaint Bot </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20052%20-%20Twitter%20Follower%20Bot">Day 052: Instagram Follower Bot </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20053%20-%20Data%20Entry%20Job%20Automation">Day 053: Web Scraping Capstone - Data Entry Job Automation </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20054%20-%20Learning%20Flask">Day 054: Introduction to Web Development with Flask </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20055%20-%20HTML%20and%20URL%20Parsing%20in%20Flask">Day 055: HTML &amp; URL Parsing in Flask and the Higher Lower Game </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20056%20-%20Rendering%20HTML%20and%20Static%20Files">Day 056: Rendering HTML/Static Files and Using Website Templates </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20057%20-%20Templating%20with%20Jinja%20in%20Flask%20Application">Day 057: Templating with Jinja in Flask Applications </a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20058%20-%20Bootstrap">Day 058: Web Foundation Boostrap </a></li>
+                </ul>
+            </div>
+
+    </div>
+
+    <div class="python-column-two">
+
+        <div class="advanced-python" id="python-boxes">
+            <p id="advanced">🏆 Advanced</p>
+            <ul>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20059%20-%20A%20Basic%20Blog">Day 059: Blog Capstone Project Part 2 - Adding Styling </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20060%20-%20Contact%20Forms">Day 060: Make POST Requests with Flask and HTML Forms </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20061%20-%20WTForms%20on%20Flask">Day 061: Building Advanced Forms with Flask-WTForms </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20062%20-%20Coffee%20%26%20Wifi%20Project">Day 062: Flask, WTForms, Bootstrap, and CSV - Coffee &amp; Wifi Project </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20063%20-%20Learning%20SQL%20with%20Flask">Day 063: Databases and with SQLite and SQLAlchemy </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20064%20-%20Top%20100%20Movies%20Website">Day 064: My Top 10 Movies Website </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20065%20-%20Brushing%20Up%20Web%20Design%20Skills">Day 065: How to Create a Website That People Will Love </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20066%20-%20Building%20My%20Own%20API%20with%20Restful%20Routing">Day 066: Building Your Own API with RESTful Routing </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20067%20-%20Posting%20Blogs%20using%20API">Day 067: Blog Capstone Project Part 3 - RESTful Routing </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20068%20to%20069%20-%20Authentication%20Using%20Flask">Day 068 to Day 069: Authentication with Flask </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20070%20-%20Deploying%20Web%20App%20Using%20Heroku">Day 070: Deploying Your Web Application with Heroku </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20071%20-%20Data%20Exploration%20Using%20Pandas">Day 071: Data Exploration with Pandas: College Major vs. Your Salary </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20072%20-%20Data%20Visualization%20with%20Matplotlib">Day 072: Data Visualisation with Matplotlib: Programming Languages </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20073%20-%20Aggregate%20and%20Merge%20Data%20with%20Pandas">Day 073: Aggregate &amp; Marge Data with Pandas: Analyse the Lego Dataset </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20074%20-%20Google%20Trends%20Data%20-%20Resampling%20and%20Visualizing%20Time%20Series">Day 074: Google Trends Data: Resampling and Visualising Time Series </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20075%20-%20Beautiful%20Plotty%20Charts%20and%20Analyzing%20the%20Android%20App%20Store">Day 075: Beautiful Plotly Charts &amp; Analysing the Android App Store </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20076%20-%20Advanced%20Computation%20with%20NumPy%20and%20N-Dimensional%20Arrays">Day 076: Computation with NumPy and N-Dimensional Arrays </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20077%20-%20Linear%20Regression%20and%20Data%20Visualization%20with%20Seaborn">Day 077: Linear Regression and Data Visualisation with Seaborn </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20078%20-%20Analyzing%20the%20Nobel%20Prize%20with%20PLotly%2C%20Matplotlib%20and%20Seaborn">Day 078: Analysing the Nobel Prize with Plotly, Matplotlib &amp; Seaborn </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20079%20-%20The%20Tragic%20Discovery%20of%20Handwashing%20-%20t-Tests%20and%20Distributions">Day 079: The Tragic Discovery of Handwashing: t-Tests &amp; Distributions </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20080%20-%20Project%20-%20Predict%20House%20Prices">Day 080: Capstone Project - Predict House Prices </a></li>
+            </ul>
+        </div>
+        <div class="professional-python" id="python-boxes">
+            <p id="professional-portfolio-projects">⚔️ Professional Portfolio Projects</p>
+            <ul>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20081%20to%20Day%20082%20-%20Project%20-%20Text%20to%20Morse%20Code%20Converter">Day 081 and Day 082: Text to Morse Code Converter </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20083%20-%20Project%20-%20Text%20Based%20Tic%20Tac%20Toe">Day 083: Tic Tac Toe </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20084%20-%20Project%20-%20Watermarking%20Desktop%20App">Day 084: Image Watermarking Desktop App </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20085%20-%20Project%20-%20Typing%20Speed%20test">Day 085: Typing Speed Test App </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20086%20-%20Project%20-%20Breakout%20Game">Day 086: Breakout: The Famous Arcade Game </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20087%20-%20Project%20-%20Cafe%20and%20Wifi%20Website">Day 087: Cafe and Wifi Website </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20088%20-%20Project%20-%20Todo%20List">Day 088: To Do Agenda App </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20089%20-%20Project%20-%20Disappearing%20Text%20Writing%20App">Day 089: Disappearing Text Writing App </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20090%20-%20Project%20-%20Convert%20PDF%20to%20Audiobook">Day 090: Convert PDF to Audiobook </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20091%20-%20Project%20-%20Image%20Color%20Palette%20Generator">Day 091: Image to Color List </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20092%20-%20Project%20-%20Custom%20Web%20Scraper">Day 092: Amazon Canada Web Scraper </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20093%20-%20Project%20-%20Automate%20the%20Google%20Dinosaur%20Game">Day 093: Google Dinosaur Game Bot </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20094%20-%20Project%20-%20Space%20Invaders">Day 094: Space Invaders </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20095%20-%20Project%20-%20Custom%20API%20Based%20Website">Day 095: Custom API </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20096%20-%20Project%20-%20An%20Online%20Shop">Day 096: An Online Shop </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20097%20-%20Project%20-%20Custom%20Automation">Day 097: Percentage Calculator </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20098%20-%20Project%20-%20Analyse%20and%20Visualize%20the%20Space%20Race">Day 098: Analyzing and Visualizing the Space Race </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20099%20-%20Peoject%20-%20Analyze%20Deaths%20Involving%20Police%20in%20the%20United%20States">Day 099: Analyzing Deaths Involving Police in the United States </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/duggguuu/100-Days-of-Python-Projects/tree/master/Day%20100%20-%20Project%20-%20Predict%20Earnings%20Using%20Multivariable%20Regression">Day 100: Predicting Earnings using Multivariable Regression </a></li>
+            </ul>
+        </div>
+        <div class="tools-python" id="python-boxes">
+            <p id="tools-and-technologies-covered">⚙️ Tools and Technologies Covered</p>
+
+            <p>
+                <span>#Python3</span>
+                <span>#PyCharm</span>
+                <span>#JupyterNotebook</span>
+                <span>#GoogleColab</span>
+                <span>#PythonScriptingAndAutomation</span>
+                <span>#PythonGameDevelopment</span>
+                <span>#WebScraping</span>
+                <span>#BeautifulSoup</span>
+                <span>#SeleniumWebDriver</span>
+                <span>#Request</span>
+                <span>#WTForms</span>
+                <span>#DataScience</span>
+                <span>#Pandas</span>
+                <span>#NumPy</span>
+                <span>#Matplotlib</span>
+                <span>#Plotly</span>
+                <span>#ScikitLearn</span>
+                <span>#Seaborn</span>
+                <span>#Turtle</span>
+                <span>#PythonGUIDesktopAppDevelopment</span>
+                <span>#Tkinter</span>
+                <span>#HTML5</span>
+                <span>#CSS3</span>
+                <span>#Bootstrap4</span>
+                <span>#BashCommandLine</span>
+                <span>#GitAndVersion Control</span>
+                <span>#BackendWebDevelopment</span>
+                <span>#Flask</span>
+                <span>#REST</span>
+                <span>#APIs</span>
+                <span>#Databases</span>
+                <span>#SQL</span>
+                <span>#SQLite</span>
+                <span>#PostgreSQL</span>
+                <span>#Authentication</span>
+                <span>#WebDesign</span>
+                <span>#DeploymentWithGitHubPagesHerokuAndGUnicorn</span>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <div class="python-certificate">
+    <img src="assets/python_assets/Certificate_of_Completion.jpg" alt="Certificate of Completion">
+</div> -->
+
+</body>
+
+<footer>
+  <div class="footer-new">
+    <p>Crafted With ❤️  |  Built from Scratch 🛠️</p>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<!-- my-stuff -->
+<meta charset="UTF-8">
+<title>Yash Gohel | Home</title>
+<link rel="icon" type="image/x-icon" href="assets/homepage_assets/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/style.css">
+<style>@import url('https://fonts.cdnfonts.com/css/graphik');</style>
+<!-- font-family: 'Graphik', sans-serif; -->
+<!-- external-dependencies -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+
+<meta property="og:title" content="Yash Gohel | Official Website">
+<meta property="og:description" content="Hi, I am Yash and I Love Playing with Pixels.">
+<meta property="og:url" content="https://yashnakulgohel.com">
+<meta property="og:image" content="https://yashnakulgohel.com/assets/homepage_assets/meta-image.png"/>
+
+</head>
+
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- scroll to top -->
+
+<!-- scroll percentage bar -->
+<div class="bar_overlay">
+<div id="progress"></div>
+</div>
+<script>
+document.addEventListener("scroll", function() {
+var scrollTop=document.documentElement["scrollTop"];
+var scrollBottom= (document.documentElement["scrollHeight"])-document.documentElement.clientHeight;
+var scrollPercent=scrollTop/scrollBottom * 100 + "%";
+console.log (scrollPercent);
+document.querySelector("#progress").style.width=scrollPercent;
+},
+{passive:true}
+)
+</script>
+<!-- scroll percentage bar -->
+
+<div class="my-loader" id="my-preloader">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <p>Yash is thinking.<br>Please wait...</p>
+  </div>
+  <script src="JS/preloader.js"></script>
+
+  <header>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx bx-menu' ></i>
+          <span class="logo_name"> Yash Gohel</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./index.html">Home</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./design-portfolio.html">
+                <i class='bx bx-palette' ></i>
+                <span class="link_name">UI/UX</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="./design-portfolio.html">UI/UX</a></li>
+              <li><a href="./tidbids.html">Tidbids</a></li>
+              <li><a href="./clueshow.html">Clueshow</a></li>
+              <li><a href="./bytes.html">Bytes</a></li>
+              <li><a href="./tax-calendar.html">Tax Calendar</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./d3js-projects.html">
+                <i class='bx bx-line-chart' ></i>
+                <span class="link_name">D3.JS</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">D3.JS</a></li>
+              <li><a href="./d3js-moving-bubbles-chart.html">Moving Bubbles Chart</a></li>
+              <li><a href="./d3js-tiled-bars.html">Tiled Bars</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./p5js-projects.html">
+                <i class='bx bxs-network-chart'></i>
+                <span class="link_name">P5.JS</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./p5js-projects.html">P5.JS Project</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./python-projects.html">
+                <i class='bx bx-code-alt' ></i>
+                <span class="link_name">Python</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./python-projects.html">Python</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./resume-page.html">
+                <i class='bx bx-briefcase-alt-2' ></i>
+              <span class="link_name">Resume</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./resume-page.html">Resume</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./my-sketches.html">
+                <i class='bx bxs-pencil'></i>
+              <span class="link_name">My Art</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./my-sketches.html">My Art</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class='bx bx-link-external' ></i>
+              <span class="link_name">Email</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github' ></i>
+              <span class="link_name">Github</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter' ></i>
+              <span class="link_name">Twitter</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-linkedin' ></i>
+              <span class="link_name">Linkedin</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram' ></i>
+              <span class="link_name">Instagram</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxs-music' ></i>
+              <span class="link_name">Rock N'Roll</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">Rock N'Roll</a></li>
+            </ul>
+          </li>
+    </ul>
+      </div>
+
+      <script src="JS/header.js"></script>
+
+  </header>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".sidebar").style.left = "0";
+      } else {
+        document.querySelector(".sidebar").style.left = "-320px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+<div class="for-color-homepage">
+<div class="mybody">
+<!-- partial:index.partial.html -->
+<div id="particles-background" class="vertical-centered-box"></div>
+<div id="particles-foreground" class="vertical-centered-box"></div>
+
+  <body>
+    <div class="vertical-centered-box">
+      <div class="content">
+        <div class="loader-circle"></div>
+        <div class="loader-line-mask">
+          <div class="loader-line"></div>
+        </div>
+        <!-- <svg class="enter-logo" width="57" height="41" viewBox="0 0 57 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="29" y1="20.375" y2="20.375" stroke="white" stroke-width="8"/>
+          <line x1="48" y1="4" x2="31" y2="4" stroke="white" stroke-width="8"/>
+          <line x1="56" y1="36.7998" x2="31" y2="36.7998" stroke="white" stroke-width="8"/>
+          <line x1="29" y1="36.7998" y2="36.7998" stroke="white" stroke-width="8"/>
+          <line x1="4" y1="24" x2="4" y2="-1.74846e-07" stroke="white" stroke-width="8"/>
+          <line x1="52" y1="40" x2="52" y2="16" stroke="white" stroke-width="8"/>
+          <line x1="25" y1="34.8496" x2="25" y2="-0.000389099" stroke="white" stroke-width="8"/>
+          <line x1="30" y1="19" x2="1" y2="19" stroke="#EC1E4F" stroke-width="8"/>
+          <line x1="49" y1="4" x2="32" y2="4" stroke="#EC1E4F" stroke-width="8"/>
+          <line x1="57" y1="36" x2="32" y2="36" stroke="#EC1E4F" stroke-width="8"/>
+          <line x1="30" y1="36" x2="1" y2="36" stroke="#EC1E4F" stroke-width="8"/>
+          <line x1="5" y1="23" x2="5" y2="-1.74846e-07" stroke="#EC1E4F" stroke-width="8"/>
+          <line x1="53" y1="40" x2="53" y2="16" stroke="#EC1E4F" stroke-width="8"/>
+          <line x1="26" y1="34" x2="26" stroke="#EC1E4F" stroke-width="8"/>
+          </svg>
+          <div class="enter-icon" ><a href="#">
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 9.57129L10.9267 16.9318C10.9672 16.9694 11.0328 16.9694 11.0733 16.9318L19 9.57129" stroke="white" stroke-width="4" stroke-linecap="round"/>
+              <path d="M3 7.42871L10.9267 14.7892C10.9672 14.8268 11.0328 14.8268 11.0733 14.7892L19 7.42871" stroke="#EC1E4F" stroke-width="4" stroke-linecap="round"/>
+              </svg>                                                           
+          </a></div> -->
+      </div>
+    <script  src="JS/script.js"></script>
+    </div>
+
+
+
+  <div class="floating-intro">
+    <div data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-delay="10"
+    data-aos-duration="2000"
+    class="floating-pic">
+      <img class="floating-img" src="assets/homepage_assets/profile_picture.jpg">
+    </div>
+    <div data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-delay="10"
+    data-aos-duration="2000"
+    class="floating-text">
+      <h1 data-title="HI, I AM YASH">HI, I AM YASH</h1>
+    </div>
+  </div>
+
+  <div class="scroll-down">
+    <a href="index.html#about-me-section"><img src="assets/homepage_assets/arrow-red.svg"></a>
+  </div>
+
+
+    <div class="playing-with-pixels" id="about-me-section">
+        <div id="hero"></div>
+      <div>
+        <h2>AND I LOVE<br>PLAYING WITH PIXELS</h2>
+        <p>I come from a non-tech & a non-design educational background. But eventually discovered what I truly love. I'm always thrilled about making an impact from the lowest possible level. Maybe, that’s why I sometimes say, “I love playing with pixels.”</p>
+      </div>
+    </div>
+
+  
+
+  <div class="playing-with-pixels">
+    <div>
+    <h2>HERE'S A LITTLE BIT ABOUT ME</h2>
+    <p>Don’t worry, I’ll keep it short 🚀<br><br>
+      3 years ago, I got to know the importance of financial literacy and 
+      how millions suffer due to lack of information. It’s a long story but
+      somehow, this became my portal into design. Since then, I’ve tried to
+      expand my knowledge in various related fields. I even
+      learnt how to code and dived into topics like data analysis, intuitive design and
+      behavioural pscychology. Everything I see, all the TV shows I watch,
+      books I read, or people I talk; everything just comes down to me
+      trying to see meaning in the ways humans interact with products.
+      <br><br>
+      To anyone reading this, I’d like to say one thing:
+      “The world is one mighty library and there’s so much to learn.” 🤩
+      <br><br>
+      I am always excited to interact with new people. Don’t hesitate to contact me via email or any of
+      my <a href="" class="noud">social media handles...</a> have a great day! 🙌🙌</p>
+  </div>
+  </div>
+
+  <div class="dhi">
+    <div class="design"><img src="assets/homepage_assets/designn.svg"></div>
+    <div class="humans"><img src="assets/homepage_assets/huumans.svg"></div>
+    <div data-aos="zoom-out"
+    data-aos-offset="100"
+    data-aos-delay="400"
+    data-aos-duration="1200" class="heartt"><svg width="412" height="46" viewBox="0 0 412 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M221.144 8.58548C220.272 7.57055 219.235 6.76557 218.095 6.21654C216.955 5.66752 215.732 5.3852 214.498 5.38574C213.264 5.38628 212.042 5.66966 210.902 6.21968C209.762 6.76971 208.726 7.57559 207.854 8.59129L206.715 9.93126L205.587 8.59419L205.579 8.58565C204.707 7.5712 203.671 6.76649 202.531 6.21747C201.392 5.66845 200.17 5.38587 198.936 5.38587C197.703 5.38587 196.481 5.66845 195.341 6.21747C194.202 6.76649 193.166 7.5712 192.294 8.58565L191.786 9.17541C190.025 11.2242 189.035 14.0029 189.035 16.9003C189.035 19.7977 190.025 22.5764 191.786 24.6252L205.171 40.1903L206.683 42.0319L206.719 41.99L206.758 42.0354L208.174 40.2978L221.652 24.6249C223.411 22.5745 224.399 19.7964 224.399 16.9C224.399 14.0037 223.411 11.2256 221.652 9.17516L221.144 8.58548ZM219.991 22.6937L206.719 38.1276L193.447 22.6937C192.126 21.1571 191.383 19.0731 191.383 16.9001C191.383 14.727 192.126 12.643 193.447 11.1064L193.954 10.5167C195.275 8.98086 197.066 8.11769 198.934 8.11687C200.801 8.11606 202.593 8.97766 203.915 10.5123L206.71 13.8227L209.519 10.5167C210.174 9.75583 210.95 9.1523 211.805 8.74053C212.66 8.32877 213.576 8.11683 214.502 8.11683C215.427 8.11683 216.343 8.32877 217.198 8.74053C218.053 9.1523 218.829 9.75583 219.484 10.5167L219.991 11.1063C221.31 12.6442 222.051 14.7278 222.051 16.9001C222.051 19.0724 221.31 21.156 219.991 22.6937V22.6937Z" fill="#EC1E4F"/>
+        </svg>                            
+      </div>
+    <div class="information"><img src="assets/homepage_assets/infoo.svg"></div>
+  </div>
+
+  <div class="grid">
+  <div class="website-parts">
+    <div>
+      <h3 class="design-and-creativity">DESIGN & CREATIVITY</h3>
+      <div class="website-parts-1">
+        <div class="uiux-part">
+          <a class="noud-black" href="design-portfolio.html">
+            <h4 class="underline-animation">UI/UX Projects</h4>
+            <p style="font-weight: 400;">Have a look at my portfolio of design relate dprojects and my design proecesses.</p>
+          </a>
+        </div>
+        <div class="my-sketches-part">
+          <a class="noud-black" href="my-sketches.html">
+            <h4 class="underline-animation">My Sketches</h4>
+            <p style="font-weight: 400;">They say, "You cannot talk about Yash without talking about his art." Explore them?</p>
+          </a>
+        </div>
+      </div>
+        <h3 style="padding-top: 2rem;">PROGRAMMING SKILLS</h3>
+        <div class="python-part">
+          <a class="noud-black" href="python-projects.html">
+            <h4 class="underline-animation">100 Days of Python Projects</h4>
+            <p style="font-weight: 400;">...and still learning. This was the most important part of my journey of learning programming.</p>
+          </a>
+        </div>
+      <div class="website-parts-2"> 
+        <div class="d3-part">
+        <a class="noud-black" href="d3js-projects.html">
+          <h4 class="underline-animation">d3.js Data Manipulation</h4>
+          <p style="font-weight: 400;">My new found love. Still learning to understand the full potential of this library.</p>
+        </a>
+        </div>
+        <div class="p5-part">  
+          <a class="noud-black" href="p5js-projects.html">
+            <h4 class="underline-animation">p5.js Creative Coding</h4>
+            <p style="font-weight: 400;">See how I combined my love for music and this really special JS library.</p>
+          </a>
+        </div>
+      </div>
+      <h3>WORK HISTORY</h3>
+      <div class="cv-part">
+        <a class="noud-black" href="resume-page.html">
+          <h4 class="underline-animation">Resume/CV</h4>
+          <p style="font-weight: 400;">Take a peek at my journey from Amazon to seed and pre-seed startups and how they shaped me.</p>
+        </a>
+      </div>
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="skills-one">
+  <h3>SKILLS & EXPERIENCES</h3>
+  <p>'hover on the canvas to interact'</p>
+    <div id="myCanvasContainer">
+      <canvas width="600" height="600" id="myCanvas">
+        <p>Anything in here will be replaced on browsers that support the canvas element</p>
+      </canvas>
+    </div>
+    <div id="tags" style="font-size: 50%; font-family: 'Graphik', sans-serif;">
+      <a href="#" style="font-size: 4ex">HTML</a>
+      <a href="#" style="font-size: 4ex">CSS</a>
+      <a href="#" style="font-size: 4ex">PHP</a>
+      <a href="#" style="font-size: 4ex">ANIME.JS</a>
+      <a href="#" style="font-size: 4ex">THREE.JS</a>
+      <a href="#" style="font-size: 4ex">P5.JS</a>
+      <a href="#" style="font-size: 4ex">D3.JS</a>
+      <a href="#" style="font-size: 4ex">PYTHON</a>
+      <a href="#" style="font-size: 4ex">GIT</a>
+      <a href="#" style="font-size: 4ex">WEBPACK</a>
+      <a href="#" style="font-size: 4ex">CANVAS</a>
+      <a href="#" style="font-size: 4ex">WEBGL</a>
+      <a href="#" style="font-size: 4ex">FIGMA</a>
+      <a href="#" style="font-size: 4ex">PHOTOSHOP</a>
+      <a href="#" style="font-size: 4ex">ILLUSTRATOR</a>
+      <a href="#" style="font-size: 4ex">ANALYTICS</a>
+      <a href="#" style="font-size: 4ex">PROTOTYPING</a>
+      <a href="#" style="font-size: 4ex">WIREFRAMING</a>
+      <a href="#" style="font-size: 4ex">JOURNEY MAPS</a>
+      <a href="#" style="font-size: 4ex">STORYBOARDING</a>
+      <a href="#" style="font-size: 4ex">MANGA ART</a>
+      <a href="#" style="font-size: 4ex">ABSTRACT ART</a>
+      <a href="#" style="font-size: 4ex">TRADING</a>
+      <a href="#" style="font-size: 4ex">TAXATION</a>
+      <a href="#" style="font-size: 4ex">JAVASCRIPT</a>
+
+      <a href="#" style="font-size: 4ex">HTML</a>
+      <a href="#" style="font-size: 4ex">CSS</a>
+      <a href="#" style="font-size: 4ex">PHP</a>
+      <a href="#" style="font-size: 4ex">ANIME.JS</a>
+      <a href="#" style="font-size: 4ex">THREE.JS</a>
+      <a href="#" style="font-size: 4ex">P5.JS</a>
+      <a href="#" style="font-size: 4ex">D3.JS</a>
+      <a href="#" style="font-size: 4ex">PYTHON</a>
+      <a href="#" style="font-size: 4ex">GIT</a>
+      <a href="#" style="font-size: 4ex">WEBPACK</a>
+      <a href="#" style="font-size: 4ex">CANVAS</a>
+      <a href="#" style="font-size: 4ex">WEBGL</a>
+      <a href="#" style="font-size: 4ex">FIGMA</a>
+      <a href="#" style="font-size: 4ex">PHOTOSHOP</a>
+      <a href="#" style="font-size: 4ex">ILLUSTRATOR</a>
+      <a href="#" style="font-size: 4ex">ANALYTICS</a>
+      <a href="#" style="font-size: 4ex">PROTOTYPING</a>
+      <a href="#" style="font-size: 4ex">WIREFRAMING</a>
+      <a href="#" style="font-size: 4ex">JOURNEY MAPS</a>
+      <a href="#" style="font-size: 4ex">STORYBOARDING</a>
+      <a href="#" style="font-size: 4ex">MANGA ART</a>
+      <a href="#" style="font-size: 4ex">ABSTRACT ART</a>
+      <a href="#" style="font-size: 4ex">TRADING</a>
+      <a href="#" style="font-size: 4ex">TAXATION</a>
+      <a href="#" style="font-size: 4ex">JAVASCRIPT</a>
+    </div>
+    <!-- partial -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='JS/tagcanvas.min.js'></script>
+    <script  src="JS/tag-canvas.js"></script>
+</div>
+
+<!-- <div class="skills-two">
+  <h3>SKILLS & EXPERIENCES</h3>
+    <div style="font-family: 'Graphik', sans-serif;">
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>PHP</p>
+      <p>ANIME.JS</p>
+      <p>THREE.JS</p>
+      <p>P5.JS</p>
+      <p>D3.JS</p>
+      <p>PYTHON</p>
+      <p>GIT</p>
+      <p>WEBPACK</p>
+      <p>CANVAS</p>
+      <p>WEBGL</p>
+      <p>FIGMA</p>
+      <p>PHOTOSHOP</p>
+      <p>ILLUSTRATOR</p>
+      <p>ANALYTICS</p>
+      <p>PROTOTYPING</p>
+      <p>WIREFRAMING</p>
+      <p>JOURNEY MAPS</p>
+      <p>STORYBOARDING</p>
+      <p>MANGA ART</p>
+      <p>ABSTRACT ART</p>
+      <p>TRADING</p>
+      <p>TAXATION</p>
+    </div>
+</div> -->
+
+<div class="grid">
+  <div class="email-me">
+    <p>did you know? EMAIL PREDATES THE INTERNET!! go ahead, give it a try?</p>
+    <a class="noud-red" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer"><h4>yashlehog@gmail.com</h4></a>
+  </div>
+</div>
+
+<a href="d3js-animated-pyramid.html"></a>
+<a href="d3js-tiled-bars.html"></a>
+
+</body>
+<!-- partial -->
+</div>
+</div>
+
+<footer>
+  <div class="footer-new">
+    <p>Crafted With ❤️  |  Built from Scratch 🛠️</p>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

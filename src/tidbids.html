@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/tidbids.css">
+    <style>@import url('https://fonts.cdnfonts.com/css/avenir');</style>
+<!-- font-family: 'Avenir', sans-serif; -->
+<style>@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');</style>
+<!-- font-family: 'Lora', serif; -->
+    <link rel="icon" type="image/x-icon" href="assets/homepage_assets/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-default.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tidbids | Design Portfolio</title>
+    <meta property="og:title" content="Yash Gohel | Official Website">
+    <meta property="og:description" content="Hi, I am Yash and I Love Playing with Pixels.">
+    <meta property="og:image" content="https://yashnakulgohel.com/assets/homepage_assets/meta-image.png"/>
+</head>
+
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- scroll to top -->
+
+<!-- scroll percentage bar -->
+<div class="bar_overlay">
+<div id="progress"></div>
+</div>
+<script>
+document.addEventListener("scroll", function() {
+var scrollTop=document.documentElement["scrollTop"];
+var scrollBottom= (document.documentElement["scrollHeight"])-document.documentElement.clientHeight;
+var scrollPercent=scrollTop/scrollBottom * 100 + "%";
+console.log (scrollPercent);
+document.querySelector("#progress").style.width=scrollPercent;
+},
+{passive:true}
+)
+</script>
+<!-- scroll percentage bar -->
+
+<div class="my-loader" id="my-preloader">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <p>Yash is thinking.<br>Please wait...</p>
+  </div>
+  <script src="JS/preloader.js"></script>
+
+  <header>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx bx-menu' ></i>
+          <span class="logo_name"> Yash Gohel</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./index.html">Home</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./design-portfolio.html">
+                <i class='bx bx-palette' ></i>
+                <span class="link_name">UI/UX</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="./design-portfolio.html">UI/UX</a></li>
+              <li><a href="./tidbids.html">Tidbids</a></li>
+              <li><a href="./clueshow.html">Clueshow</a></li>
+              <li><a href="./bytes.html">Bytes</a></li>
+              <li><a href="./tax-calendar.html">Tax Calendar</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="./d3js-projects.html">
+                <i class='bx bx-line-chart' ></i>
+                <span class="link_name">D3.JS</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">D3.JS</a></li>
+              <li><a href="./d3js-moving-bubbles-chart.html">Moving Bubbles Chart</a></li>
+              <li><a href="./d3js-tiled-bars.html">Tiled Bars</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./p5js-projects.html">
+                <i class='bx bxs-network-chart'></i>
+                <span class="link_name">P5.JS</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./p5js-projects.html">P5.JS Project</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./python-projects.html">
+                <i class='bx bx-code-alt' ></i>
+                <span class="link_name">Python</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./python-projects.html">Python</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./resume-page.html">
+                <i class='bx bx-briefcase-alt-2' ></i>
+              <span class="link_name">Resume</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./resume-page.html">Resume</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./my-sketches.html">
+                <i class='bx bxs-pencil'></i>
+              <span class="link_name">My Art</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="./my-sketches.html">My Art</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class='bx bx-link-external' ></i>
+              <span class="link_name">Email</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="mailto:yashlehog@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github' ></i>
+              <span class="link_name">Github</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://github.com/duggguuu?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter' ></i>
+              <span class="link_name">Twitter</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://twitter.com/wai_geee" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-linkedin' ></i>
+              <span class="link_name">Linkedin</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram' ></i>
+              <span class="link_name">Instagram</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://instagram.com/wai.geee" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxs-music' ></i>
+              <span class="link_name">Rock N'Roll</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.youtube.com/playlist?list=PL2bepHENAgdi-cQmbBg-XiyUVNi7cRw4e" target="_blank" rel="noopener noreferrer">Rock N'Roll</a></li>
+            </ul>
+          </li>
+    </ul>
+      </div>
+
+      <script src="JS/header.js"></script>
+
+  </header>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".sidebar").style.left = "0";
+      } else {
+        document.querySelector(".sidebar").style.left = "-320px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+<body class="tidbids-container">
+
+    <!-- <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div> -->
+
+    <div class="header-logo">
+        <img src="assets/tidbids_assets/tb_logo_one.svg">
+    </div>
+    
+    <div class="logo-description">
+        <img src="assets/tidbids_assets/tb_logo_two.svg">
+    </div>   
+    <p>‘bid’ is a very popular trading jargon<br>‘tidbids’ means a small and particularly interesting item of information. This brand name might give the user a sense of ease and comfort to learn</p>
+
+    <h4>Overview</h4>
+    <p>Tidbids is a self-guided course to help you re-invent your steps into technical trading.<br>With all the great content scattered online (massive pieces of information), I believe that people should be able to learn from a collected and organized resource and a step-by-step guided platform.</p>
+        
+    <h4>Design Process</h4>
+    <div class="design-process">
+        <img src="assets/tidbids_assets/tb_dp.svg">
+    </div>
+    <p>With a focus on UI for this project, the steps I covered in my design process included user stories, proto personas, user flows, sketching, wireframing, style guides, and prototyping.
+    </p>
+
+    <div class="reserach-box">
+    <h4>Research</h4>
+    <p>An extensive research conducted by me within my freiends and family and a lot of accquaintances helped me understand the general trends in a tier 2 city industrial of India. There were 200 respondents to my survey and a total of 6 questions. I kept my questions crisp and to the point. Look at the results, insights, and various opportunities I could derive from my findings.</p>
+    
+    <section class="splide tidbids-research" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide research-slider"><img src="assets/tidbids_assets/research/Frame 1.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/tidbids_assets/research/Frame 2.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/tidbids_assets/research/Frame 3.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/tidbids_assets/research/Frame 4.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/tidbids_assets/research/Frame 5.svg"></li>
+            <li class="splide__slide research-slider"><img src="assets/tidbids_assets/research/Frame 6.svg"></li>
+        </ul>
+        </div>
+    </section>
+  </div>
+                                    <script>
+                                        var splide = new Splide( '.tidbids-research', {
+                                            perPage: 1,
+                                            rewind : true,
+                                        } );
+                                        splide.mount();
+                                    </script>  
+
+    <h4>Define</h4>
+    <p>I started the first step in my process by defining and answering the 5 W questions.</p>
+    <div>
+    <p class="define">What?<br>
+        An app where users can learn about technical analysis and engage with a trustworthy community.
+        </p>
+    <p class="define">Who?<br>
+        A vast group of traders who face great deal of diffculty learning and finding the ‘right’ resources.</p>
+    <p class="define">When?<br>
+        The learning and researching process will be performed on a daily basis while they are trading.</p>
+    <p class="define">Where?<br>
+        The app will mostly be used when the users are home or sometimes while commuting or in the office.</p>
+    <p class="define">Why?<br>
+        The users want to gain knowledge. Trading is getting popular by the day. Users want to increase their profits and trade safe.</p>
+        </div>
+
+    <h4>Empathize</h4>
+    <p>After defining the scope of the app, the next step was creating user stories and a proto personas to better understand my users’ needs and goals.</p>
+
+    <section class="splide tidbids-empathize" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide empathize-slider"><img src="assets/tidbids_assets/empathize/em_newuser.svg"></li>
+            <li class="splide__slide empathize-slider"><img src="assets/tidbids_assets/empathize/em_researcher.svg"></li>
+            <li class="splide__slide empathize-slider"><img src="assets/tidbids_assets/empathize/em_poweruser.svg"></li>
+            <li class="splide__slide empathize-slider"><img src="assets/tidbids_assets/empathize/em_mover.svg"></li>
+        </ul>
+        </div>
+    </section>
+                                <script>
+                                    var splide = new Splide( '.tidbids-empathize', {
+                                        perPage: 1,
+                                        rewind : true,
+                                    } );
+                                    splide.mount();
+                                </script>
+
+    <h4>Journey Mapping</h4>
+    <p>Here’s the journey of a one of the users who might use the app. A carefully thought out user journey is put down covering all the major touchpoints.</p>
+    <p>
+        PROTO PERSONA:<br>
+        Type: New user<br>
+        Name: Virali<br>
+        Age: 23<br>
+        Job: Software Developer<br>
+        Location: Bengaluru<br>
+        Trading Type: Swing + Long-Term Trader<br>
+        Experience: 1.5 Years Experience</p>
+
+    
+    <div class="journey">
+        <img src="assets/tidbids_assets/tb_userjourney.svg">
+    </div>
+    
+    <h4>Important Features</h4>
+    <p>-user onboarding and personalization-<br>
+        -user freindly learning infrastructure-<br>
+        -quizzes to keep the user serious on path-<br>
+        -a forum to post questions-<br>
+        -a community to share ideas-<br>
+        -paper trading feature for hands-on learning-<br>
+        -intuitive navigation bar for easy sitching-<br>
+        -watchlist, dashboard and other cool features-</p>
+        
+    <h4>Ideation</h4>
+    <p class="ideatiom"><a class="noud" href="assets/tidbids_assets/tidBIDS wireframe.pdf" target="_blank" rel="noopener noreferrer">View wireframes in high resolution? Download PDF</a></p>
+    
+    <div class="design-system">
+        <h4>Design System</h4>
+        <p>The tidBIDS design system was built to accommodate readabilty. Its supposed to be user-friendly for users of all ages. The design has accomodated a lot of features. Since I wanted to showcase a all-in-one trading platform, I’ve tried to bring forth various important aspects that helps a trader.</p>
+        <p><strong>Light Color Scheme</strong></p>
+        <p>Traditionally, learning platforms have been accustomed to lighter themes, primarily because most users study and work during daylight. I intentionally chose a light theme for the app since our users tend to engage in the app much earlier in the day, and in a room with bright lights. I’ve used a variant of gray(#595D71) and white(#FEFBFF), keeping the contrast to a minimum and at the same time, making it amazingly readable.</p>
+        <p><strong>Color Scheme</strong></p>
+        <p>Blue. Blue. Blue. That’s the first choice when it comes to building fintech products. Blue creates a trust among users. In this case, I’ve used an electric blue. Combine that with a soothing gray, and we have a perfect blend!</p>
+        <div class="color-scheme">
+            <img src="assets/tidbids_assets/tb_ds.svg">
+        </div>
+    </div>
+    
+    <div class="rhythm">
+        <img src="assets/tidbids_assets/rhythm_tb.svg">
+    </div>
+    
+        <!-- ui-part-one-start -->
+
+        <div class="ui-part-one">
+
+            <h4>the most exciting phase...<br/><span style="color:#004DEC">Prototyping</span>&nbsp;and&nbsp;<span style="color:#21CE99">Visual Design</span>...</h4>
+
+            <h4>Intro</h4>
+            <section class="splide intro" aria-label="Splide Basic HTML Example">
+                <div class="splide__track intro-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/intro/tb_intro1.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/intro/tb_intro2.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/intro/tb_intro3.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.intro', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p>The visual elements in the intro took me a really long time to design. The goal was to use trading elements with the principles Google Matrial. The characters should appear as bold confident. This was the end result.</p>
+    
+            <h4>Know Your User</h4>
+            <section class="splide kyc" aria-label="Splide Basic HTML Example">
+                <div class="splide__track kyc-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 1.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 2.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 3.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 4.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 5.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 6.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 7.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 8.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/kyc/Know Your User 9.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.kyc', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p style="color:#FEFBFF">It is always important to know the users. Their needs are important. To make any ‘user’ facing product, a short survey with some basic questions is the way to go. In this case, the questions are asked to understand where the user can starte their trading journey from...</p>
+    
+            <h4>Setting End Goals</h4>
+            <section class="splide goals" aria-label="Splide Basic HTML Example">
+                <div class="splide__track goals-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 1.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 2.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 3.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 4.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 5.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.goals', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p style="color:#FEFBFF">The users are given to choose the rigous of the course. They can choose between casual, regular and serious. This section also allows them to choose a path they’d like to start their learning journey from.</p>
+    
+            <h4>Course Overview</h4>
+            <section class="splide overview" aria-label="Splide Basic HTML Example">
+                <div class="splide__track overview-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/chap overview/Course Overview Start.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/chap overview/Chapter Overview.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/chap overview/Course Overview Mid.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.overview', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p style="color:#FEFBFF">An interactive interface to navigate between chapter and various courses and keep a track of all the progress.</p>
+    
+            <h4>Card View of Each Chapter</h4>
+            <section class="splide chapters" aria-label="Splide Basic HTML Example">
+                <div class="splide__track chapters-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 1.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 2.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 3.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 4.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/setting end goals/Goals and Priorities 5.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.chapters', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p>The card biew is important. Really important. Combine this with daily progress bars and users will be motivated to study more. Completing each set of card will the user a sense of satisfaction which in turn will trigger the dopamine.</p>
+    
+            <h4>Quizzes, Levels & Trackers</h4>
+            <section class="splide quizzer" aria-label="Splide Basic HTML Example">
+                <div class="splide__track quiz-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/q and t/Test Your Knowledge 1.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/q and t/Test Your Knowledge 2.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/q and t/Test Your Knowledge 3.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/q and t//Course Overview Mid-1.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/q and t/Course Overview Mid-2.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/q and t/Course Overview Mid.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.quizzer', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p>Again, to keep the user motivated, and be serious about this course, quizzes will play an integral part. They also track their rprogress and see their daily streaks.</p>
+        
+        </div> 
+
+        <!-- ui-part-one-end -->
+
+        <div class="ui-part-two">
+
+        <div class="community">
+            <img src="assets/tidbids_assets/tb_comm.svg">
+        </div>
+
+        <h4>tidBIDS Community</h4>
+        <p>The main community section helps the user to connect with traders around the globe. They can ask questions and resolve their doubts. The community will have strict guidelines to prevent fradulent activities. </p>
+        <div class="tb-community">
+                    <img src="assets/tidbids_assets/community/Community Main.svg">
+        </div>
+            
+        <h4>tidBIDS MEET</h4>
+        <p>One of the features that makes this app shine is the ‘MEET’ section. Users can connect with their friends. If allowed, friends can track each others’ trading activities. This will let them gain insights on how the real time trades are performing.</p>
+        <section class="splide tb-meet" aria-label="Splide Basic HTML Example">
+            <div class="splide__track tb-meet-slider-list">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="assets/tidbids_assets/meet/Meet Dashboard Profile Extended.svg"></li>
+                    <li class="splide__slide"><img src="assets/tidbids_assets/meet/Meet Dashboard Main.svg"></li>
+                    <li class="splide__slide"><img src="assets/tidbids_assets/meet/Meet Dashboard Main-1.svg"></li>
+                </ul>
+            </div>
+        </section>
+                                        <script>
+                                            var splide = new Splide( '.tb-meet', {
+                                            type   : 'loop',
+                                            drag   : 'free',
+                                            perPage: 3,
+                                            } );
+                                            splide.mount();
+                                        </script>
+        </div>
+
+        <div class="ui-part-one">
+
+            <p>This is MY take on how a Trading App should look and feel like.</p>
+            <p>Since this is a learning app, I’ve incorporated a version of ‘virtual trading.’</p>
+
+            <h4>Paper Trading aka Virtual Trading</h4>
+            <section class="splide virtual-trading" aria-label="Splide Basic HTML Example">
+                <div class="splide__track virtual-trading-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/paper trading/Paper Trading Strategy Details.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/paper trading/Paper Trading Strategy Entry Conditions.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/paper trading/Paper Trading Strategy Exit Conditions.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/paper trading/Paper Trading Strategy Parameters.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/paper trading/Buy Window.svg"></li>
+                </ul>
+            </div>
+        </section>
+                                        <script>
+                                            var splide = new Splide( '.virtual-trading', {
+                                            type   : 'loop',
+                                            drag   : 'free',
+                                            perPage: 3,
+                                            } );
+                                            splide.mount();
+                                        </script>
+            <p>When you practise something, only and only then you can achieve true greatness.<br>The Paper Trading feature allows users to have honds-on experience regarding what they’ve learnt.<br>Look carefully at the various screens above. They contain steps on how a user can create a strategy.</p>
+
+            <h4>Backtesting</h4>
+            <section class="splide backtesting" aria-label="Splide Basic HTML Example">
+                <div class="splide__track backtesting-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/bt/Paper Trading Backtest.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/bt/Paper Trading Individual Backtest.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/bt/Paper Trading Select Instruments.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/bt/Paper Trading Trade Started.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.backtesting', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p>Once the strategy is created. The system checks how it performed on past data. For example: last 1 month, last 1 year, last 6 months, etc. Once, the results are satisfactory, and the user has a fair ideas that the strategy will perform well in the future, they can perform their trades.<br>The screens show the resutls of each stock as well as the cumulative results. The user can also select the stocks they want to trade.</p>
+
+            <h4>Trading Dashboard</h4>  
+            <section class="splide dashboard" aria-label="Splide Basic HTML Example">
+                <div class="splide__track dashboard-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/db/Paper Trading Holdings.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/db/Paper Trading Dashboard.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/db/Paper Trading Composition.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.dashboard', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p>The dashboard displays the trading P&L, all the strategies, watchlists, funds and quick links.</p>
+
+        </div>
+
+        <div class="ui-part-two">
+
+            <h4>Navigation Bar & Watchlists</h4>
+            <section class="splide navigation" aria-label="Splide Basic HTML Example">
+                <div class="splide__track navigation-slider-list">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="assets/tidbids_assets/navi/Menu Unextended.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/navi/Menu Extended.svg"></li>
+                        <li class="splide__slide"><img src="assets/tidbids_assets/navi/Menu Watchlist View.svg"></li>
+                    </ul>
+                </div>
+            </section>
+                                            <script>
+                                                var splide = new Splide( '.navigation', {
+                                                type   : 'loop',
+                                                drag   : 'free',
+                                                perPage: 3,
+                                                } );
+                                                splide.mount();
+                                            </script>
+            <p>A carefully crafted navigation bar that allows the user to jump to any part of the app. I also designed a unique icon for each section of the app.<br>The navigation bar and the watchlist can be swtiched back and forth. Since traders constantly want to keep a track of their favorite stocks, incorporating it here only seemed logical.</p>
+
+            </div>
+
+            <h4>Prototype at a Glance</h4>
+            <div class="prototype">
+                <img src="assets/tidbids_assets/tb_pt.svg">
+            </div>
+
+        <h4>Key Takeaways</h4>
+        <p>While working on this project, I realized that it is important to focus on one feature and perfect it. Since I focused on on too many features, the project ended up looking complex. Also, this was one the first projects I worked on. I was focusing a lot on visual elements. But soon, I realized that it is more important to give attention to the human aspect.</p>
+
+</body>
+
+<footer>
+  <div class="footer-new">
+    <p>Crafted With ❤️  |  Built from Scratch 🛠️</p>
+    </div>
+</footer>
+
+</html>
